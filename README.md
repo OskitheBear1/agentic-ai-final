@@ -24,7 +24,7 @@
 | Real 100-review cold/warm pilot, offline calculator, T3 controls | [cost report](cost/report.md) · [`cost/calculator.py`](cost/calculator.py) · [pilot records](cost/pilot_records.jsonl)/[calls](cost/pilot_calls.jsonl) · [usage](cost/usage.csv)/[rates](cost/rates.csv) · [T3 retry/spend/recovery](evals/results/t3.json) · [real credit-outage recovery](#one-failed-case-and-how-it-was-handled) |
 | **Working result** | |
 | Full ingestion, coverage, successful classification | [ingestion](grading/ingestion.json) · [records](grading/records.jsonl.gz) · [self-check results](#course-checker-self-check) (accounted 1.0, 100,000 valid completed, 0 failed) |
-| Runnable staged program, bounded calls, saved handoffs, resume | [`pipeline/run.py`](pipeline/run.py) · [`grading/calls.jsonl`](grading/calls.jsonl) (121,447 calls, initial/resume phases) · checkpoints [before](grading/checkpoint_before.json)/[after](grading/checkpoint_after.json) · [interruption/resume](#interruption-and-resume) · screen recording (see [Interruption and resume](#interruption-and-resume)) |
+| Runnable staged program, bounded calls, saved handoffs, resume | [`pipeline/run.py`](pipeline/run.py) · [`grading/calls.jsonl`](grading/calls.jsonl) (121,447 calls, initial/resume phases) · checkpoints [before](grading/checkpoint_before.json)/[after](grading/checkpoint_after.json) · [interruption/resume](#interruption-and-resume) · [screen recording](https://github.com/OskitheBear1/agentic-ai-final/releases/download/p5-full-run/resume_recording_full_run.mov) |
 | Reproducible ranking, deployed dashboard + backend + DB, grounded recommendation | `python -m pipeline.rank` reproduces [`ranking.csv`](grading/ranking.csv) byte for byte · [dashboard](https://agentic-ai-final-three.vercel.app) · [API](dashboard/api/index.py) · [DB schema](dashboard/schema.sql) · [loader](pipeline/export_db.py) · [live check 10/10](evals/results/dashboard_check.json) |
 
 ---
@@ -221,7 +221,7 @@ Review **`3046d93b-9fcc-4a32-b689-297eb9fa3ce2`**: *"Worst experience, lot's of 
 
 `grading/calls.jsonl` has 12,499 `initial` and 65,600 `resume` enrichment calls, and no review ID was sent to the enricher twice. The 15,000 − 12,499 difference is exact-text cache hits.
 
-**Screen recording:** RECORDING_LINK. It shows the 21,000-ID snapshot, then the resume command starting and new batches completing.
+**Screen recording:** [resume_recording_full_run.mov](https://github.com/OskitheBear1/agentic-ai-final/releases/download/p5-full-run/resume_recording_full_run.mov) (57 s, [release page](https://github.com/OskitheBear1/agentic-ai-final/releases/tag/p5-full-run)). It shows the 21,000-ID snapshot, then the resume command starting and new batches completing.
 
 ### Course checker self-check
 `python3 tools/check_submission.py check --reference local-reference.json --gold evals/gold_benchmark.json --submission grading`
