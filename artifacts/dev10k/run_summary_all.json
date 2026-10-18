@@ -1,0 +1,214 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792353895.859614,
+  "enrich": [
+    "finished",
+    {
+      "batches": 200,
+      "cache_hits": 1552,
+      "completed": 10000,
+      "label_config": "jev-1.13.0+jev-q1+schema-v1+quote-v1",
+      "phase": "initial",
+      "quarantined": 0,
+      "wall_s": 298.725,
+      "workers": 4
+    }
+  ],
+  "export": "/Users/jbond/Code/agentic-ai/final-assignment/artifacts/dev10k/grading",
+  "group": {
+    "assign_calls": 4224,
+    "complaints": 4544,
+    "failed_assign_calls": 0,
+    "issues": 34,
+    "wall_s": 129.54
+  },
+  "ingest": {
+    "pending": 10000
+  },
+  "memo": {
+    "attempts": 1,
+    "cited_reviews": 5,
+    "claims": 11,
+    "recommended_issue_id": "billing.basic_features_behind_premium",
+    "wall_s": 11.7
+  },
+  "rank": {
+    "issues": 34,
+    "top": [
+      {
+        "complaint_count": 689,
+        "issue_id": "billing.basic_features_behind_premium",
+        "mean_severity": "2.859216",
+        "priority_score": 1970,
+        "rank": 1,
+        "severity_sum": 1970
+      },
+      {
+        "complaint_count": 948,
+        "issue_id": "other.general_dissatisfaction",
+        "mean_severity": "1.819620",
+        "priority_score": 1725,
+        "rank": 2,
+        "severity_sum": 1725
+      },
+      {
+        "complaint_count": 495,
+        "issue_id": "usability.ad_frequency_loudness",
+        "mean_severity": "2.115152",
+        "priority_score": 1047,
+        "rank": 3,
+        "severity_sum": 1047
+      }
+    ]
+  },
+  "run": "dev10k",
+  "spent_after_usd": 0.642776,
+  "spent_before_usd": 0.099851,
+  "spent_this_command_usd": 0.542925,
+  "stage": "all",
+  "stage_seconds": {
+    "enrich": 298.905,
+    "export": 0.299,
+    "group": 129.584,
+    "ingest": 0.169,
+    "memo": 11.735,
+    "rank": 0.172,
+    "verify": 42.916
+  },
+  "started_at": 1792353412.050349,
+  "verify": {
+    "agreement": {
+      "intent": 0.9,
+      "sentiment": 0.96,
+      "severity": 0.85,
+      "severity_within_1": 0.99,
+      "topic": 0.8233
+    },
+    "declared_sample_size": 300,
+    "intent_confusion_enricher_vs_verifier": [
+      [
+        "cancellation->complaint",
+        6
+      ],
+      [
+        "praise->unclear",
+        5
+      ],
+      [
+        "unclear->praise",
+        3
+      ],
+      [
+        "praise->complaint",
+        3
+      ],
+      [
+        "request->praise",
+        2
+      ],
+      [
+        "complaint->unclear",
+        2
+      ],
+      [
+        "request->complaint",
+        2
+      ],
+      [
+        "unclear->complaint",
+        2
+      ],
+      [
+        "complaint->cancellation",
+        2
+      ],
+      [
+        "complaint->request",
+        1
+      ],
+      [
+        "cancellation->unclear",
+        1
+      ],
+      [
+        "praise->cancellation",
+        1
+      ]
+    ],
+    "needs_review_flag_vs_disagreement": {
+      "flagged": 25,
+      "flagged_and_disagree": 15,
+      "unflagged_and_disagree": 62
+    },
+    "prompt_version": "verify-v1",
+    "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+    "sampled": 300,
+    "topic_confusion_enricher_vs_verifier": [
+      [
+        "other->catalog",
+        8
+      ],
+      [
+        "other->billing",
+        6
+      ],
+      [
+        "usability->catalog",
+        5
+      ],
+      [
+        "usability->playback",
+        4
+      ],
+      [
+        "other->playback",
+        4
+      ],
+      [
+        "other->usability",
+        4
+      ],
+      [
+        "playback->usability",
+        3
+      ],
+      [
+        "downloads->playback",
+        3
+      ],
+      [
+        "billing->usability",
+        2
+      ],
+      [
+        "usability->other",
+        2
+      ],
+      [
+        "catalog->usability",
+        2
+      ],
+      [
+        "playback->billing",
+        1
+      ],
+      [
+        "catalog->playback",
+        1
+      ],
+      [
+        "billing->playback",
+        1
+      ],
+      [
+        "catalog->downloads",
+        1
+      ]
+    ],
+    "verified": 300,
+    "verifier_failed": 0,
+    "verifier_model": "claude-haiku-5-5",
+    "wall_s": 42.88
+  },
+  "wall_clock_s": 483.802
+}

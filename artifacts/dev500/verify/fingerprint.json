@@ -1,0 +1,85 @@
+{
+  "fingerprint": "35eef510d69c18c6d06c43a2e0160cc009387727169ad3aa897ae74c2db14e09",
+  "summary": {
+    "agreement": {
+      "intent": 0.91,
+      "sentiment": 0.94,
+      "severity": 0.84,
+      "severity_within_1": 0.98,
+      "topic": 0.86
+    },
+    "declared_sample_size": 100,
+    "intent_confusion_enricher_vs_verifier": [
+      [
+        "praise->complaint",
+        3
+      ],
+      [
+        "unclear->praise",
+        2
+      ],
+      [
+        "complaint->unclear",
+        1
+      ],
+      [
+        "cancellation->complaint",
+        1
+      ],
+      [
+        "praise->unclear",
+        1
+      ],
+      [
+        "request->praise",
+        1
+      ]
+    ],
+    "needs_review_flag_vs_disagreement": {
+      "flagged": 3,
+      "flagged_and_disagree": 3,
+      "unflagged_and_disagree": 19
+    },
+    "prompt_version": "verify-v1",
+    "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+    "sampled": 100,
+    "topic_confusion_enricher_vs_verifier": [
+      [
+        "other->catalog",
+        3
+      ],
+      [
+        "other->usability",
+        3
+      ],
+      [
+        "usability->catalog",
+        3
+      ],
+      [
+        "usability->other",
+        1
+      ],
+      [
+        "downloads->access",
+        1
+      ],
+      [
+        "playback->access",
+        1
+      ],
+      [
+        "playback->catalog",
+        1
+      ],
+      [
+        "billing->usability",
+        1
+      ]
+    ],
+    "verified": 100,
+    "verifier_failed": 0,
+    "verifier_model": "claude-haiku-5-5",
+    "wall_s": 16.05
+  }
+}

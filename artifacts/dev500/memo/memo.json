@@ -1,0 +1,82 @@
+{
+  "cited_reviews": [
+    {
+      "issue_id": "billing.premium_gated_features",
+      "review_id": "aa8fec15-2de4-46af-a911-1b49bcb4eb4c"
+    },
+    {
+      "issue_id": "billing.premium_gated_features",
+      "review_id": "cc39673b-e332-4f1d-a6c6-ce378a715dcb"
+    },
+    {
+      "issue_id": "billing.premium_gated_features",
+      "review_id": "6a4f84b4-18e2-47d9-adb8-2461a9319c11"
+    },
+    {
+      "issue_id": "usability.ad_frequency_and_length",
+      "review_id": "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726"
+    },
+    {
+      "issue_id": "playback.app_crashes_and_freezes",
+      "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "billing.premium_gated_features",
+      "metric": "priority_score",
+      "value": "94"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "billing.premium_gated_features",
+      "metric": "severity_sum",
+      "value": "94"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "billing.premium_gated_features",
+      "metric": "complaint_count",
+      "value": "33"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "billing.premium_gated_features",
+      "metric": "mean_severity",
+      "value": "2.848485"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "usability.ad_frequency_and_length",
+      "metric": "priority_score",
+      "value": "54"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "usability.ad_frequency_and_length",
+      "metric": "complaint_count",
+      "value": "25"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "playback.app_crashes_and_freezes",
+      "metric": "complaint_count",
+      "value": "10"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "playback.app_crashes_and_freezes",
+      "metric": "mean_severity",
+      "value": "3.800000"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "playback.app_crashes_and_freezes",
+      "metric": "priority_score",
+      "value": "38"
+    }
+  ],
+  "memo_markdown": "## Recommendation\nPrioritize **billing.premium_gated_features** (features moved behind premium) next quarter. It has the highest priority_score, 94 [C1], and the highest severity_sum, 94 [C2].\n\n## Why\nIt has 33 complaints [C3], the most among specific, actionable issues, with a mean severity of 2.848485 [C4]. It accounts for 13.5% of complaints. Complaints are concentrated in 2023-10 (18 of them), which suggests a recent trigger. Reviews describe basic functions such as skipping and song choice being locked ([aa8fec15-2de4-46af-a911-1b49bcb4eb4c], [cc39673b-e332-4f1d-a6c6-ce378a715dcb]). One review states an intent to stop using the app ([6a4f84b4-18e2-47d9-adb8-2461a9319c11]).\n\n## Alternatives considered\n- **usability.ad_frequency_and_length**: priority_score 54 [C5] from 25 complaints [C6]. It is a steady, long-running complaint, but less severe and with fewer complaints. Example: [e5e6c55f-3069-4b7c-9807-f8b5d5bf2726].\n- **playback.app_crashes_and_freezes**: only 10 complaints [C7], but the highest mean severity, 3.800000 [C8], and a priority_score of 38 [C9]. It is a good candidate for a targeted engineering fix alongside the main priority. Example: [55cc3abf-c295-4591-8c3a-78085cfdefaa].\n- other.abusive_or_non_specific_feedback ranks second by score (86) but is non-specific and not actionable, so I excluded it.\n\n## Evidence\nThe figures above come from the classified scope: 500 reviews, of which 245 were complaint or cancellation reviews. The billing issue's lead over the ads issue is clear on both count and severity. Playback crashes are rarer but more severe per review.\n\n## Limitations\nReviews are self-selected public posts. The pack covers only the classified scope, not the full corpus. Model labels can be wrong. Cancellation language is expressed intent, not observed churn. First and last months are partial. The pack supports no revenue or causal claims, and the October spike does not prove a cause.",
+  "recommended_issue_id": "billing.premium_gated_features"
+}

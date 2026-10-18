@@ -1,0 +1,82 @@
+{
+  "agreement": {
+    "intent": 0.91,
+    "sentiment": 0.94,
+    "severity": 0.85,
+    "severity_within_1": 0.98,
+    "topic": 0.84
+  },
+  "declared_sample_size": 100,
+  "intent_confusion_enricher_vs_verifier": [
+    [
+      "praise->complaint",
+      3
+    ],
+    [
+      "complaint->unclear",
+      2
+    ],
+    [
+      "unclear->praise",
+      2
+    ],
+    [
+      "cancellation->complaint",
+      1
+    ],
+    [
+      "praise->unclear",
+      1
+    ]
+  ],
+  "needs_review_flag_vs_disagreement": {
+    "flagged": 20,
+    "flagged_and_disagree": 12,
+    "unflagged_and_disagree": 12
+  },
+  "prompt_version": "verify-v1",
+  "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+  "sampled": 100,
+  "topic_confusion_enricher_vs_verifier": [
+    [
+      "other->usability",
+      3
+    ],
+    [
+      "usability->catalog",
+      3
+    ],
+    [
+      "billing->usability",
+      3
+    ],
+    [
+      "playback->catalog",
+      2
+    ],
+    [
+      "other->catalog",
+      1
+    ],
+    [
+      "usability->other",
+      1
+    ],
+    [
+      "downloads->access",
+      1
+    ],
+    [
+      "playback->access",
+      1
+    ],
+    [
+      "downloads->playback",
+      1
+    ]
+  ],
+  "verified": 100,
+  "verifier_failed": 0,
+  "verifier_model": "claude-haiku-5-5",
+  "wall_s": 13.88
+}

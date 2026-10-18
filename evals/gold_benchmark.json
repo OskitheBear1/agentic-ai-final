@@ -1,5 +1,5 @@
 {
-  "version": "student-golden-50-v1",
+  "version": "student-golden-50-v1.1",
   "cases": [
     {
       "review_id": "292ce26a-815d-4bce-a3b6-93cb6c9e7e2c",
@@ -60,7 +60,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": false
@@ -188,7 +189,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.5,
       "needs_review": false
@@ -268,7 +270,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -284,7 +287,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -300,7 +304,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -332,7 +337,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -380,7 +386,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -428,7 +435,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -444,7 +452,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -492,7 +501,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": -1.0,
       "needs_review": true
@@ -540,7 +550,8 @@
         "unclear"
       ],
       "accepted_severity": [
-        2
+        2,
+        1
       ],
       "sentiment": 0.0,
       "needs_review": true
@@ -800,6 +811,15 @@
       ],
       "sentiment": 1.0,
       "needs_review": false
+    }
+  ],
+  "corrections": [
+    {
+      "date": "2026-10-18",
+      "change": "added severity 1 as an accepted alternative for the 11 'unclear'-intent cases (contract: severity 1 = neutral/unclear content); original human severity 2 kept",
+      "cases": 11,
+      "decided_by": "student",
+      "prompted_by": "rubric consistency check, not by model predictions"
     }
   ]
 }

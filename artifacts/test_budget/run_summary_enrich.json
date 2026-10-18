@@ -1,0 +1,27 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792354069.880301,
+  "enrich": [
+    "finished",
+    {
+      "batches": 9,
+      "cache_hits": 21,
+      "completed": 424,
+      "label_config": "jev-1.13.0+jev-q2+schema-v2+quote-v1",
+      "phase": "resume",
+      "quarantined": 0,
+      "wall_s": 50.573,
+      "workers": 1
+    }
+  ],
+  "run": "test_budget",
+  "spent_after_usd": 0.703011,
+  "spent_before_usd": 0.682132,
+  "spent_this_command_usd": 0.020879,
+  "stage": "enrich",
+  "stage_seconds": {
+    "enrich": 50.689
+  },
+  "started_at": 1792354019.178499,
+  "wall_clock_s": 50.698
+}

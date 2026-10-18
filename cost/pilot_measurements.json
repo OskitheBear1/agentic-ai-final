@@ -51,5 +51,150 @@
       "memo": "memo-v1"
     }
   },
-  "machine": "Apple M2 Pro, 16 GB RAM, macOS (local orchestration; no local inference)"
+  "machine": "Apple M2 Pro, 16 GB RAM, macOS (local orchestration; no local inference)",
+  "refresh": {
+    "dev500": {
+      "rows": 500,
+      "distinct_texts": 479,
+      "calls": [
+        {
+          "role": "enrich",
+          "outcome": "succeeded",
+          "n": 479,
+          "input_tokens": 562124,
+          "output_tokens": 94101,
+          "retried": 0
+        },
+        {
+          "role": "group",
+          "outcome": "succeeded",
+          "n": 243,
+          "input_tokens": 122792,
+          "output_tokens": 19254,
+          "retried": 0
+        },
+        {
+          "role": "memo",
+          "outcome": "succeeded",
+          "n": 1,
+          "input_tokens": 6101,
+          "output_tokens": 1519,
+          "retried": 0
+        },
+        {
+          "role": "verify",
+          "outcome": "succeeded",
+          "n": 4,
+          "input_tokens": 3967,
+          "output_tokens": 3624,
+          "retried": 0
+        }
+      ],
+      "results": {
+        "completed": 500
+      },
+      "enrich_invocations": [
+        {
+          "phase": "initial",
+          "batches": 10,
+          "completed": 500,
+          "quarantined": 0,
+          "cache_hits": 21,
+          "wall_s": 27.548,
+          "workers": 2,
+          "label_config": "jev-1.13.0+jev-q1+schema-v1+quote-v1"
+        }
+      ]
+    },
+    "dev10k": {
+      "rows": 10000,
+      "distinct_texts": 8448,
+      "calls": [
+        {
+          "role": "enrich",
+          "outcome": "succeeded",
+          "n": 8448,
+          "input_tokens": 9919065,
+          "output_tokens": 1660022,
+          "retried": 0
+        },
+        {
+          "role": "group",
+          "outcome": "succeeded",
+          "n": 4225,
+          "input_tokens": 2012398,
+          "output_tokens": 285218,
+          "retried": 0
+        },
+        {
+          "role": "memo",
+          "outcome": "succeeded",
+          "n": 1,
+          "input_tokens": 6811,
+          "output_tokens": 1656,
+          "retried": 0
+        },
+        {
+          "role": "verify",
+          "outcome": "succeeded",
+          "n": 12,
+          "input_tokens": 12813,
+          "output_tokens": 11106,
+          "retried": 0
+        }
+      ],
+      "results": {
+        "completed": 10000
+      },
+      "enrich_invocations": [
+        {
+          "phase": "initial",
+          "batches": 200,
+          "completed": 10000,
+          "quarantined": 0,
+          "cache_hits": 1552,
+          "wall_s": 298.725,
+          "workers": 4,
+          "label_config": "jev-1.13.0+jev-q1+schema-v1+quote-v1"
+        }
+      ]
+    },
+    "dev500_q2": {
+      "rows": 500,
+      "distinct_texts": 479,
+      "calls": [
+        {
+          "role": "enrich",
+          "outcome": "succeeded",
+          "n": 479,
+          "input_tokens": 590864,
+          "output_tokens": 94107,
+          "retried": 0
+        },
+        {
+          "role": "verify",
+          "outcome": "succeeded",
+          "n": 4,
+          "input_tokens": 3967,
+          "output_tokens": 3602,
+          "retried": 0
+        }
+      ],
+      "results": {
+        "completed": 500
+      },
+      "enrich_invocations": [
+        {
+          "phase": "initial",
+          "batches": 10,
+          "completed": 500,
+          "quarantined": 0,
+          "cache_hits": 21,
+          "wall_s": 17.376,
+          "workers": 4,
+          "label_config": "jev-1.13.0+jev-q2+schema-v2+quote-v1"
+        }
+      ]
+    }
+  }
 }

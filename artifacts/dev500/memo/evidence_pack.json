@@ -1,0 +1,434 @@
+{
+  "issues_ranked_total": 33,
+  "scope_note": "Classified scope only; first and last calendar months are partial.",
+  "top_issues": [
+    {
+      "cancellation_count": "5",
+      "complaint_count": "33",
+      "complaints_by_month": {
+        "2022-09": 1,
+        "2022-10": 1,
+        "2022-12": 1,
+        "2023-02": 1,
+        "2023-04": 1,
+        "2023-05": 3,
+        "2023-08": 1,
+        "2023-09": 3,
+        "2023-10": 18,
+        "2023-11": 3
+      },
+      "description": "Basic features such as skipping, choosing songs, replaying, and viewing lyrics now require a premium subscription.",
+      "issue_id": "billing.premium_gated_features",
+      "mean_severity": "2.848485",
+      "name": "Features moved behind premium",
+      "priority_score": "94",
+      "rank": "1",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "you put every basic feature in the premium pack and we can't even listen song in ROW NOW !!!",
+          "review_id": "aa8fec15-2de4-46af-a911-1b49bcb4eb4c",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "I know they are pushing the users to buy their premium version but this isn't the way to do it.",
+          "review_id": "cc39673b-e332-4f1d-a6c6-ce378a715dcb",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "It's impossible to use the app without prime And the recommended song is so bad",
+          "review_id": "074efbfd-f69e-46ca-9cea-e5204a192a2a",
+          "severity": 4
+        },
+        {
+          "intent": "cancellation",
+          "quote": "This app is now not for free users..... they all have just to earn money or nothing else....and now i stop using this app!!",
+          "review_id": "6a4f84b4-18e2-47d9-adb8-2461a9319c11",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "4",
+      "severity_sum": "94",
+      "share_of_complaints": "0.1347",
+      "share_of_complaints_pct": "13.5%"
+    },
+    {
+      "cancellation_count": "2",
+      "complaint_count": "47",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2022-08": 1,
+        "2022-09": 1,
+        "2022-12": 2,
+        "2023-01": 1,
+        "2023-04": 1,
+        "2023-05": 1,
+        "2023-06": 2,
+        "2023-07": 23,
+        "2023-10": 7,
+        "2023-11": 7
+      },
+      "description": "Users post profanity, insults, or very short negative remarks without describing a specific problem.",
+      "issue_id": "other.abusive_or_non_specific_feedback",
+      "mean_severity": "1.829787",
+      "name": "Abusive or non-specific feedback",
+      "priority_score": "86",
+      "rank": "2",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Worst app",
+          "review_id": "06a45bd5-3ed9-43af-b7f2-8b9487e2ffff",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Noob app",
+          "review_id": "2d5cdd20-3094-40a5-bc6e-653302b59b56",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "It's not even a basic music player anymore... Spotify more like Shity-fy",
+          "review_id": "68107809-52c1-469d-a78a-569280e49ed6",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Hate this application",
+          "review_id": "39e472ad-2038-4978-a559-d052e3844e59",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "86",
+      "share_of_complaints": "0.1918",
+      "share_of_complaints_pct": "19.2%"
+    },
+    {
+      "cancellation_count": "1",
+      "complaint_count": "25",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2022-08": 2,
+        "2022-09": 1,
+        "2022-12": 1,
+        "2023-01": 2,
+        "2023-02": 2,
+        "2023-03": 2,
+        "2023-04": 1,
+        "2023-05": 1,
+        "2023-06": 2,
+        "2023-07": 2,
+        "2023-09": 2,
+        "2023-10": 3,
+        "2023-11": 3
+      },
+      "description": "Users complain about too many ads, ads played back-to-back, and long unskippable ad breaks.",
+      "issue_id": "usability.ad_frequency_and_length",
+      "mean_severity": "2.160000",
+      "name": "Excessive or unskippable ads",
+      "priority_score": "54",
+      "rank": "3",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "useless music app music k naam pe khaali ad dikhata hai.",
+          "review_id": "6eb64519-37d4-4591-a47a-bbb96357de36",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Too many ads.... it's literally useless if u hv not taken premium",
+          "review_id": "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "I say it's great for music but the ads is unbearable not only it's unskippable it's all 25+ sec long and you get 2 ads and when you want to choose a song in your playlist your getting another ad so shuffle is the only option here and I don't understand why would you need to pay t",
+          "review_id": "50626053-301c-42fa-91aa-2f88aef82e64",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "Worst music app I have ever seen, this is not music app, this is advertisement app... Bakwaas wahiyaad irritating app",
+          "review_id": "cc7b79ef-bf37-40fc-a02e-4917b86e422c",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "1",
+      "severity_sum": "54",
+      "share_of_complaints": "0.1020",
+      "share_of_complaints_pct": "10.2%"
+    },
+    {
+      "cancellation_count": "1",
+      "complaint_count": "10",
+      "complaints_by_month": {
+        "2022-05": 1,
+        "2022-06": 1,
+        "2022-07": 1,
+        "2023-01": 1,
+        "2023-03": 2,
+        "2023-08": 2,
+        "2023-10": 2
+      },
+      "description": "The app crashes on launch, gets stuck on the loading screen, or stops playback mid-song, especially after updates.",
+      "issue_id": "playback.app_crashes_and_freezes",
+      "mean_severity": "3.800000",
+      "name": "App crashes and freezes",
+      "priority_score": "38",
+      "rank": "4",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "I dont know what happened, but the app experience has gotten worse over the course of a month.",
+          "review_id": "651e6e7b-f93e-4369-9631-15c73ddcd4ad",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Have been using Spotify for a very long time but now the app is just crashing since the latest update.",
+          "review_id": "4a806587-0dde-4fb4-b4f1-f5c7d197c927",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "The latest update has caused my app to crash I cant open the app please fix.",
+          "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "App is stuck on loading/logo screen",
+          "review_id": "66a29b3c-c14d-440e-b722-b23e0c99ae82",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "8",
+      "severity_sum": "38",
+      "share_of_complaints": "0.0408",
+      "share_of_complaints_pct": "4.1%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "10",
+      "complaints_by_month": {
+        "2022-05": 1,
+        "2022-12": 1,
+        "2023-02": 1,
+        "2023-04": 1,
+        "2023-07": 1,
+        "2023-08": 2,
+        "2023-09": 1,
+        "2023-10": 2
+      },
+      "description": "Music stops or fails to play because the app wrongly reports no connection, including offline mode and Wi-Fi issues.",
+      "issue_id": "playback.playback_connectivity_errors",
+      "mean_severity": "3.700000",
+      "name": "Playback connectivity errors",
+      "priority_score": "37",
+      "rank": "5",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Always say no internet connection Most of my favourite Bollywood songs are not present",
+          "review_id": "3df77a78-ad9a-4456-8be8-8178ffd43d67",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Keeps saying that there's no internet connection when my internet works fine for all other apps?",
+          "review_id": "bcdf315e-c82d-41f0-9fcd-ba5933dfe77e",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "It keeps saying I don't have internet connection while I do, takes FOREVER to look up a song.",
+          "review_id": "98d936e1-fd1d-475a-89ee-0e1517cb60d3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Latest update is stupid. App says no internet connection available, but clearly I do otherwise how else did would I have downloaded the update? Magic??",
+          "review_id": "c64af4d8-ac17-48fe-ae38-fd54b41b16b1",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "7",
+      "severity_sum": "37",
+      "share_of_complaints": "0.0408",
+      "share_of_complaints_pct": "4.1%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "13",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2022-08": 1,
+        "2022-09": 2,
+        "2022-12": 1,
+        "2023-01": 1,
+        "2023-02": 1,
+        "2023-03": 1,
+        "2023-04": 1,
+        "2023-08": 2,
+        "2023-10": 2
+      },
+      "description": "The app plays different songs than selected, forces shuffle, or inserts recommended tracks into playlists and liked songs.",
+      "issue_id": "usability.unwanted_autoplay_and_shuffle",
+      "mean_severity": "2.615385",
+      "name": "Unwanted autoplay and shuffle behavior",
+      "priority_score": "34",
+      "rank": "6",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "I put my selection on shuffle plays same songs over and over",
+          "review_id": "e393cec1-67e8-4f58-a484-8d9d76dc8fd6",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "This app is so hard to navigate on phone if I click a a song a have liked it goes to didn't song I never heard or it might play a demo of the song that is dumb it should play the song",
+          "review_id": "0853c56b-0fa1-4d12-9cb9-6817d52233f5",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "I want to listen to the music I click on NOT whatever other stuff you throw into my playlists.",
+          "review_id": "4f6a50a1-9440-468c-b35f-961bca94fd88",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "The new drop down menu where it only lets me shuffle. Bad design wrecking me here have a playlist in an order for reason",
+          "review_id": "f8a85378-c4dd-40e2-b548-beebcdf3b991",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "34",
+      "share_of_complaints": "0.0531",
+      "share_of_complaints_pct": "5.3%"
+    },
+    {
+      "cancellation_count": "2",
+      "complaint_count": "11",
+      "complaints_by_month": {
+        "2022-05": 1,
+        "2022-06": 2,
+        "2022-07": 1,
+        "2022-11": 1,
+        "2023-02": 1,
+        "2023-06": 2,
+        "2023-10": 3
+      },
+      "description": "usability complaints not covered above",
+      "issue_id": "usability.general",
+      "mean_severity": "2.727273",
+      "name": "Other usability complaints",
+      "priority_score": "30",
+      "rank": "7",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Liked songs list is not viewing do something",
+          "review_id": "991dc66a-aba8-4844-be48-816539680877",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Can't switch between video and audio only podcasts. Too much email spam. I pay for premium, so just take my money and leave me alone. I don't want a Car Thing, merch, or emails about what I listened to this year.",
+          "review_id": "caa9bb7e-814c-4895-b872-10637419b9ba",
+          "severity": 3
+        },
+        {
+          "intent": "cancellation",
+          "quote": "Am very sad about the new spotfy update. i can't play song happly . Can't repeat and play specific part.please solve this matter. I'm leaving spotfy",
+          "review_id": "e16a4550-43e7-4ae1-b538-a65cc652c31b",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "It was my favorite Intel it got an update I only have 6 skips and I can't put songs on loop anymore. This update ruined it please fix it",
+          "review_id": "5d50e8f0-18d7-4510-8b1d-eb6b2323f3c9",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "1",
+      "severity_sum": "30",
+      "share_of_complaints": "0.0449",
+      "share_of_complaints_pct": "4.5%"
+    },
+    {
+      "cancellation_count": "6",
+      "complaint_count": "13",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2023-05": 1,
+        "2023-07": 2,
+        "2023-09": 1,
+        "2023-10": 8
+      },
+      "description": "Users express broad disappointment with the latest update without citing a specific issue.",
+      "issue_id": "other.general_dissatisfaction_with_update",
+      "mean_severity": "2.230769",
+      "name": "Dissatisfaction with recent update",
+      "priority_score": "29",
+      "rank": "8",
+      "representative_quotes": [
+        {
+          "intent": "cancellation",
+          "quote": "The update made the app useless .... Uninstall krdia ye app ab bekar hai ... Wynk hi theek h",
+          "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "After the update the app is very irritating! Spotify has removed all the basic features for which we used to love this app. It used be my favourite app.. This is ridiculous!",
+          "review_id": "adc4c3e4-3717-4888-ad86-c9381c224d2f",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "Recent update 👎",
+          "review_id": "ca16e65d-d2ff-4453-a495-b8c422809330",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "This new update sucks.",
+          "review_id": "6ecd5837-917a-45de-b811-278da3a26a7a",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "1",
+      "severity_sum": "29",
+      "share_of_complaints": "0.0531",
+      "share_of_complaints_pct": "5.3%"
+    }
+  ],
+  "totals": {
+    "by_intent": {
+      "cancellation": 29,
+      "complaint": 216,
+      "praise": 208,
+      "request": 12,
+      "unclear": 35
+    },
+    "by_topic": {
+      "access": 9,
+      "billing": 50,
+      "catalog": 38,
+      "downloads": 14,
+      "other": 285,
+      "playback": 37,
+      "usability": 67
+    },
+    "classified_reviews": 500,
+    "complaint_or_cancellation_reviews": 245
+  }
+}

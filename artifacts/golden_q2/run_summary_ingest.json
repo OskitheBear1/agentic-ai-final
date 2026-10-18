@@ -1,0 +1,17 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792354086.2701519,
+  "ingest": {
+    "pending": 50
+  },
+  "run": "golden_q2",
+  "spent_after_usd": 0.703746,
+  "spent_before_usd": 0.703746,
+  "spent_this_command_usd": 0.0,
+  "stage": "ingest",
+  "stage_seconds": {
+    "ingest": 0.005
+  },
+  "started_at": 1792354086.259978,
+  "wall_clock_s": 0.006
+}

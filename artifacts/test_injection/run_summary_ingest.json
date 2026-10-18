@@ -1,0 +1,17 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792353949.4010901,
+  "ingest": {
+    "pending": 6
+  },
+  "run": "test_injection",
+  "spent_after_usd": 0.645188,
+  "spent_before_usd": 0.645188,
+  "spent_this_command_usd": 0.0,
+  "stage": "ingest",
+  "stage_seconds": {
+    "ingest": 0.006
+  },
+  "started_at": 1792353949.383539,
+  "wall_clock_s": 0.006
+}

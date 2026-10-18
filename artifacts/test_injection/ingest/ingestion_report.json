@@ -1,0 +1,24 @@
+{
+  "accounting_check": true,
+  "distinct_nonempty_texts_full_file": 6,
+  "duplicate_review_ids": 0,
+  "empty_review_text": 0,
+  "input_bytes": 1031,
+  "input_file": "injection_reviews.csv",
+  "input_sha256": "cc403fa4fa3efe46bcf0678e636d70c3975a64821527038ba3735b1c8e3caf87",
+  "missing_app_version": 6,
+  "model_calls": 0,
+  "nonempty_rows": 6,
+  "rows": 6,
+  "scope": {
+    "declared_scope": 1000000000,
+    "distinct_texts_in_scope": 6,
+    "exact_duplicate_rows_in_scope": 0,
+    "method": "Lowest SHA-256('berkeley-fall-2026-assignment-5-v1:' + review_id) among unique, nonempty, valid-rating rows (the course's own sampling order), so the golden 50 and all dev checkpoints are included.",
+    "selected": 6
+  },
+  "status_counts": {
+    "pending": 6
+  },
+  "unique_review_ids": 6
+}

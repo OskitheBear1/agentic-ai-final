@@ -1,0 +1,94 @@
+{
+  "cited_reviews": [
+    {
+      "issue_id": "billing.basic_features_behind_premium",
+      "review_id": "4aaf911e-2ab6-4ccb-a0b7-4c6336f729c8"
+    },
+    {
+      "issue_id": "billing.basic_features_behind_premium",
+      "review_id": "e8a47caf-064b-4ebb-9ceb-f17477e6c3a1"
+    },
+    {
+      "issue_id": "usability.ad_frequency_loudness",
+      "review_id": "933b1cf2-8fa9-46aa-9a06-85fd89533a99"
+    },
+    {
+      "issue_id": "playback.playback_interruptions",
+      "review_id": "9a0f86dd-f3a3-455a-825e-cba00c2ccf54"
+    },
+    {
+      "issue_id": "other.general_dissatisfaction",
+      "review_id": "8f628cd8-8216-449a-b9b6-482f5dbb9edf"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "priority_score",
+      "value": "1970"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "complaint_count",
+      "value": "689"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "severity_sum",
+      "value": "1970"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "mean_severity",
+      "value": "2.859216"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "other.general_dissatisfaction",
+      "metric": "complaint_count",
+      "value": "948"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "other.general_dissatisfaction",
+      "metric": "mean_severity",
+      "value": "1.819620"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "other.general_dissatisfaction",
+      "metric": "priority_score",
+      "value": "1725"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "usability.ad_frequency_loudness",
+      "metric": "complaint_count",
+      "value": "495"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "usability.ad_frequency_loudness",
+      "metric": "priority_score",
+      "value": "1047"
+    },
+    {
+      "claim_id": "C10",
+      "issue_id": "playback.playback_interruptions",
+      "metric": "complaint_count",
+      "value": "232"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "playback.playback_interruptions",
+      "metric": "mean_severity",
+      "value": "3.409483"
+    }
+  ],
+  "memo_markdown": "## Recommendation\nPrioritize **billing.basic_features_behind_premium** (Basic features locked behind premium) next quarter. It has the highest priority_score, 1970 [C1], across 689 complaints [C2].\n\n## Why\n- Highest severity_sum, 1970 [C3], and the most cancellation-intent reviews among the top issues (138 in the pack).\n- Mean severity is 2.859216 [C4], and 63 reviews are severity 4+.\n- Complaints are concentrated in 2023-10 (363 in the pack), suggesting a recent change triggered the reaction. This is a pattern, not proof of cause.\n\n## Alternatives considered\n- **other.general_dissatisfaction**: most complaints, 948 [C5], but low mean severity of 1.819620 [C6] and priority_score 1725 [C7]. It is vague and not actionable.\n- **usability.ad_frequency_loudness** (usability): 495 complaints [C8], priority_score 1047 [C9]. It is steady over time and a reasonable second choice.\n- **playback.playback_interruptions** (playback): lower volume, 232 complaints [C10], but the highest mean severity, 3.409483 [C11]. Consider it as a targeted reliability fix.\n- Access and support are small topics in the pack (168 and 14 classified reviews), so they are not candidates.\n\n## Evidence\nRepresentative reviews: 4aaf911e-2ab6-4ccb-a0b7-4c6336f729c8 and e8a47caf-064b-4ebb-9ceb-f17477e6c3a1 (can't use the app without premium; billing issue); 933b1cf2-8fa9-46aa-9a06-85fd89533a99 (loud ads; usability); 9a0f86dd-f3a3-455a-825e-cba00c2ccf54 (playback stops mid-song); 8f628cd8-8216-449a-b9b6-482f5dbb9edf (general dissatisfaction).\n\n## Limitations\n- Reviews are self-selected and public.\n- The pack covers classified scope only (10000 reviews), not the full corpus; first and last months are partial.\n- Model labels can be wrong.\n- Cancellation language is expressed intent, not observed churn.\n- No revenue or causal claims are made; the recommendation reflects complaint volume and severity only.",
+  "recommended_issue_id": "billing.basic_features_behind_premium"
+}

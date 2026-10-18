@@ -43,14 +43,14 @@ Formula: `item_cost = billed_units × price_per_unit` (price per 1M ÷ 1,000,000
 
 ## 3. Full-run projection — 100,000 classified rows
 
-Per-unit inputs (100-review pilot): Jev 1174 input + 196 output tokens per call; verify $0.000039/review; subtopic assignment $0.000020/complaint text; taxonomy $0.0010 once; memo $0.0295 once; complaint share 0.51. Throughput used: 20.0 reviews/s at 4 workers [MODELED: 4 x measured 1-worker rate, capped at rps_cap 20] (measured so far: {'1_worker_pilot': 8.88}).
+Per-unit inputs (refreshed from dev run 'dev10k' (8448 enrich calls)): Jev 1174 input + 196 output tokens per call; verify $0.000039/review; subtopic assignment $0.000020/complaint text; taxonomy $0.0010 once; memo $0.0295 once; complaint share 0.51. Throughput used: 33.5 reviews/s at 4 workers [measured (4_workers_dev10k)] (measured so far: {'1_worker_pilot': 8.88, '4_workers_dev10k': 33.48}).
 
 | scenario | texts sent | enrich calls | enrich $ | fallback $ | verify $ | group $ | memo $ | **API total $** | est. hours | budget |
 |---|---|---|---|---|---|---|---|---|---|---|
-| base (exact-text reuse) | 78,099 | 79,270 | 3.91 | 0.00 | 0.039 | 0.81 | 0.031 | **4.79** | 1.69 | ok |
-| conservative (reuse) | 78,099 | 83,566 | 4.12 | 0.16 | 0.041 | 0.84 | 0.035 | **5.19** | 1.75 | ok |
-| base, no reuse | 100,000 | 101,500 | 5.00 | 0.00 | 0.039 | 1.04 | 0.031 | **6.11** | 2.15 | ok |
-| reference: full corpus 660,609, reuse (484,189 texts) | 484,189 | 491,452 | 24.23 | 0.00 | 0.039 | 5.02 | 0.031 | **29.32** | 10.29 | **EXCEEDS BUDGET** |
+| base (exact-text reuse) | 78,099 | 79,270 | 3.91 | 0.00 | 0.039 | 0.81 | 0.031 | **4.79** | 1.02 | ok |
+| conservative (reuse) | 78,099 | 83,566 | 4.12 | 0.16 | 0.041 | 0.84 | 0.035 | **5.20** | 1.06 | ok |
+| base, no reuse | 100,000 | 101,500 | 5.01 | 0.00 | 0.039 | 1.04 | 0.031 | **6.11** | 1.30 | ok |
+| reference: full corpus 660,609, reuse (484,189 texts) | 484,189 | 491,452 | 24.24 | 0.00 | 0.039 | 5.02 | 0.031 | **29.32** | 6.16 | **EXCEEDS BUDGET** |
 
 Fallback $ is declared headroom for a capped stronger-model re-label (max_fallback_fraction); the current pipeline quarantines instead of escalating, so measured fallback spend is $0.
 

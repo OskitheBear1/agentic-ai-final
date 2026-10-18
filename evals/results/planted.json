@@ -1,0 +1,737 @@
+{
+  "test": "planted_errors",
+  "synthetic": true,
+  "excluded_from_business_aggregates": true,
+  "source": "30 random completed dev500 records (seed 20261018), one wrong field each",
+  "caught_by_type": {
+    "wrong_topic": "5/5",
+    "wrong_intent": "5/5",
+    "wrong_severity": "5/5",
+    "bad_quote": "5/5",
+    "invalid_label": "5/5",
+    "sentiment_out_of_range": "5/5"
+  },
+  "caught_total": "30/30",
+  "cases": [
+    {
+      "review_id": "9666e9fe-0bc2-4e4c-8842-2162be0b6610",
+      "plant": "wrong_topic",
+      "original": [
+        "other",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "downloads",
+        "complaint",
+        2,
+        -0.995
+      ],
+      "verifier": [
+        "other",
+        "complaint",
+        2
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "e69dc5e0-1317-424e-a778-6081914a7b85",
+      "plant": "wrong_intent",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "cancellation",
+        1,
+        0.995
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "f1532a7d-a47c-40eb-b41f-da17a379f9fb",
+      "plant": "wrong_severity",
+      "original": [
+        "other",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "other",
+        "complaint",
+        5,
+        -0.995
+      ],
+      "verifier": [
+        "other",
+        "complaint",
+        2
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "4966b59e-cf09-4881-b3ea-34fd4118a553",
+      "plant": "bad_quote",
+      "original": [
+        "billing",
+        "complaint",
+        3
+      ],
+      "planted": [
+        "billing",
+        "complaint",
+        3,
+        -0.96
+      ],
+      "verifier": [
+        "billing",
+        "complaint",
+        2
+      ],
+      "code_flags": [
+        "quote_not_substring"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "b5c993cb-5447-409a-8ea4-b8d8b2952145",
+      "plant": "invalid_label",
+      "original": [
+        "billing",
+        "praise",
+        1
+      ],
+      "planted": [
+        "music",
+        "praise",
+        1,
+        1.0
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "invalid_label"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa",
+      "plant": "sentiment_out_of_range",
+      "original": [
+        "playback",
+        "complaint",
+        4
+      ],
+      "planted": [
+        "playback",
+        "complaint",
+        4,
+        3.0
+      ],
+      "verifier": [
+        "playback",
+        "complaint",
+        4
+      ],
+      "code_flags": [
+        "sentiment_range"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "16b3ba08-5722-4b8d-abbd-4da6c0cde9f2",
+      "plant": "wrong_topic",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "access",
+        "praise",
+        1,
+        1.0
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "bc554ce2-8461-46eb-954d-c81e5b388cf4",
+      "plant": "wrong_intent",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "cancellation",
+        1,
+        0.995
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "24e63383-4646-4f63-ae37-2014857c236b",
+      "plant": "wrong_severity",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        5,
+        0.755
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "e07b648e-f8f8-42d6-ace5-394f28d8a1b2",
+      "plant": "bad_quote",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        1,
+        0.51
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "quote_not_substring"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "06d4c78d-73b4-4b54-9ef3-3d5a0d18cb96",
+      "plant": "invalid_label",
+      "original": [
+        "playback",
+        "complaint",
+        4
+      ],
+      "planted": [
+        "music",
+        "complaint",
+        4,
+        -0.435
+      ],
+      "verifier": [
+        "playback",
+        "complaint",
+        4
+      ],
+      "code_flags": [
+        "invalid_label"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "85383985-844d-4f9b-bcd9-d6016ac35f6b",
+      "plant": "sentiment_out_of_range",
+      "original": [
+        "usability",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "usability",
+        "complaint",
+        2,
+        3.0
+      ],
+      "verifier": [
+        "usability",
+        "complaint",
+        2
+      ],
+      "code_flags": [
+        "sentiment_range"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "2117a268-4c74-4795-9a11-00799e3fc450",
+      "plant": "wrong_topic",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "access",
+        "praise",
+        1,
+        0.995
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "890aeb60-e7cf-4f0d-a321-03a1c8b65757",
+      "plant": "wrong_intent",
+      "original": [
+        "billing",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "billing",
+        "praise",
+        2,
+        -0.87
+      ],
+      "verifier": [
+        "billing",
+        "complaint",
+        2
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "08d3a5a9-1ec1-4b10-a5c8-393da33843e1",
+      "plant": "wrong_severity",
+      "original": [
+        "billing",
+        "complaint",
+        3
+      ],
+      "planted": [
+        "billing",
+        "complaint",
+        1,
+        -0.845
+      ],
+      "verifier": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "b47c203f-366e-4409-922d-cd52aa8bbef6",
+      "plant": "bad_quote",
+      "original": [
+        "other",
+        "cancellation",
+        2
+      ],
+      "planted": [
+        "other",
+        "cancellation",
+        2,
+        -0.7
+      ],
+      "verifier": [
+        "usability",
+        "cancellation",
+        2
+      ],
+      "code_flags": [
+        "quote_not_substring"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "c1726764-f0ce-4abc-ad9e-6cd143e1b2c7",
+      "plant": "invalid_label",
+      "original": [
+        "access",
+        "complaint",
+        4
+      ],
+      "planted": [
+        "music",
+        "complaint",
+        4,
+        -0.38
+      ],
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ],
+      "code_flags": [
+        "invalid_label"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "f9e87b89-b080-48a2-a019-5c5dcf1689a6",
+      "plant": "sentiment_out_of_range",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        1,
+        3.0
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "sentiment_range"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "ee17dcd6-07c0-4441-8e64-e7ea57877c78",
+      "plant": "wrong_topic",
+      "original": [
+        "usability",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "downloads",
+        "complaint",
+        2,
+        -0.485
+      ],
+      "verifier": [
+        "usability",
+        "complaint",
+        2
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "5fb51bd0-dbe9-4a19-a466-a77f0c14393e",
+      "plant": "wrong_intent",
+      "original": [
+        "other",
+        "complaint",
+        2
+      ],
+      "planted": [
+        "other",
+        "praise",
+        2,
+        -0.705
+      ],
+      "verifier": [
+        "other",
+        "complaint",
+        2
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "6d5a2382-f027-4636-810f-bcc075fdb534",
+      "plant": "wrong_severity",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        5,
+        0.875
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "7a5919ad-16d4-4f29-8e6e-1041415d7eee",
+      "plant": "bad_quote",
+      "original": [
+        "billing",
+        "cancellation",
+        3
+      ],
+      "planted": [
+        "billing",
+        "cancellation",
+        3,
+        -0.95
+      ],
+      "verifier": [
+        "billing",
+        "cancellation",
+        2
+      ],
+      "code_flags": [
+        "quote_not_substring"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "884e8712-da13-4890-a39e-731b69f42d6c",
+      "plant": "invalid_label",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "music",
+        "praise",
+        1,
+        1.0
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "invalid_label"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "b25beb44-9cc8-4d1e-b375-a4f319419424",
+      "plant": "sentiment_out_of_range",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        1,
+        3.0
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "sentiment_range"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "6ba8fc67-700c-4d33-ad84-ef67a05b2ae1",
+      "plant": "wrong_topic",
+      "original": [
+        "billing",
+        "complaint",
+        3
+      ],
+      "planted": [
+        "support",
+        "complaint",
+        3,
+        -0.505
+      ],
+      "verifier": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "074efbfd-f69e-46ca-9cea-e5204a192a2a",
+      "plant": "wrong_intent",
+      "original": [
+        "billing",
+        "complaint",
+        4
+      ],
+      "planted": [
+        "billing",
+        "praise",
+        4,
+        -0.835
+      ],
+      "verifier": [
+        "billing",
+        "complaint",
+        3
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "8faa4895-3ee7-4360-a20c-529042b2330b",
+      "plant": "wrong_severity",
+      "original": [
+        "other",
+        "unclear",
+        1
+      ],
+      "planted": [
+        "other",
+        "unclear",
+        5,
+        0.12
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [],
+      "verifier_flag": true,
+      "caught": true
+    },
+    {
+      "review_id": "7e91d976-20e5-40f0-a6f5-7312eadf7e78",
+      "plant": "bad_quote",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "other",
+        "praise",
+        1,
+        0.775
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "quote_not_substring"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "06d59085-ebf9-454a-ba15-1e8480562352",
+      "plant": "invalid_label",
+      "original": [
+        "other",
+        "praise",
+        1
+      ],
+      "planted": [
+        "music",
+        "praise",
+        1,
+        0.99
+      ],
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ],
+      "code_flags": [
+        "invalid_label"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    },
+    {
+      "review_id": "01124066-b5dd-4c79-8618-d1bea99d197a",
+      "plant": "sentiment_out_of_range",
+      "original": [
+        "playback",
+        "complaint",
+        3
+      ],
+      "planted": [
+        "playback",
+        "complaint",
+        3,
+        3.0
+      ],
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ],
+      "code_flags": [
+        "sentiment_range"
+      ],
+      "verifier_flag": false,
+      "caught": true
+    }
+  ]
+}

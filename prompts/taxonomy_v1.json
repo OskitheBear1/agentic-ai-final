@@ -1,0 +1,192 @@
+{
+  "source": "proposed by claude-haiku-5-5 (group-v1) from run dev10k; edited by human review 2026-10-18 (see evals/results/taxonomy_review.md)",
+  "topics": {
+    "access": [
+      {
+        "description": "Users cannot log in via phone number, email, Facebook, Google, or password, often getting errors like 'something went wrong' or invalid number messages.",
+        "id": "login_failure",
+        "name": "Login failures"
+      },
+      {
+        "description": "Users are logged out of their account randomly or when closing the app, sometimes losing liked songs or playlists afterward.",
+        "id": "unexpected_logout",
+        "name": "Unexpected logouts"
+      },
+      {
+        "description": "Users report hacked accounts or lost access to family plan accounts and say support channels are not helping recover them.",
+        "id": "account_recovery_help",
+        "name": "Account recovery and hacked accounts"
+      },
+      {
+        "description": "access complaints not covered above",
+        "id": "general",
+        "name": "Other access complaints"
+      }
+    ],
+    "billing": [
+      {
+        "description": "Features such as skipping, shuffling, choosing songs, or queueing now require a Premium subscription, which users feel is unfair.",
+        "id": "basic_features_behind_premium",
+        "name": "Basic features locked behind premium"
+      },
+      {
+        "description": "Premium subscribers still hear ads, including in podcasts.",
+        "id": "ads_despite_premium",
+        "name": "Ads despite paying for premium"
+      },
+      {
+        "id": "price_and_value",
+        "name": "Price and value for money",
+        "description": "Premium is too expensive, price increases, or the plan is not worth the cost"
+      },
+      {
+        "description": "Users feel misled by free trials that auto-convert, unclear billing, or the cost of the subscription.",
+        "id": "trial_and_subscription_terms",
+        "name": "Trial and subscription terms"
+      },
+      {
+        "description": "billing complaints not covered above",
+        "id": "general",
+        "name": "Other billing complaints"
+      }
+    ],
+    "catalog": [
+      {
+        "description": "Users cannot find certain songs, originals, remixes, or regional content that they expect to be available.",
+        "id": "missing_songs",
+        "name": "Missing songs and artists"
+      },
+      {
+        "description": "Lyrics are not shown for many songs, especially non-English tracks, or are attached to the wrong releases.",
+        "id": "lyrics_unavailable",
+        "name": "Lyrics missing or incorrect"
+      },
+      {
+        "description": "Search returns no results, liked songs or playlists fail to show, or search within playlists was removed.",
+        "id": "search_and_library_bugs",
+        "name": "Search and library bugs"
+      },
+      {
+        "description": "Users dislike the recommended tracks and playlists, blocked artists reappearing, or unwanted content being added to their playlists.",
+        "id": "recommendations_quality",
+        "name": "Recommendations and content quality"
+      },
+      {
+        "description": "catalog complaints not covered above",
+        "id": "general",
+        "name": "Other catalog complaints"
+      }
+    ],
+    "downloads": [
+      {
+        "description": "Downloaded songs or podcasts do not play when offline or buffer indefinitely.",
+        "id": "offline_playback_failure",
+        "name": "Offline playback failures"
+      },
+      {
+        "description": "Downloaded content vanishes after restarts, device resets, or a day or two, and must be downloaded again.",
+        "id": "downloads_disappearing",
+        "name": "Downloads disappearing or re-downloading"
+      },
+      {
+        "description": "Users cannot delete individual songs from downloads, cannot save to SD card, or face storage and data usage problems.",
+        "id": "download_management_limits",
+        "name": "Download management limits"
+      },
+      {
+        "description": "downloads complaints not covered above",
+        "id": "general",
+        "name": "Other downloads complaints"
+      }
+    ],
+    "other": [
+      {
+        "description": "Users generally say recent updates made the app worse, without specifying a particular feature.",
+        "id": "negative_update_reaction",
+        "name": "Negative reaction to recent updates"
+      },
+      {
+        "description": "Users object to content removal, playlist choices, or perceived bias in moderation of artists or topics.",
+        "id": "content_policy_concerns",
+        "name": "Content policy concerns"
+      },
+      {
+        "description": "other complaints not covered above",
+        "id": "general",
+        "name": "Other other complaints"
+      }
+    ],
+    "playback": [
+      {
+        "description": "Songs pause, stop mid-track, or restart from the beginning, or fail to start playing.",
+        "id": "playback_interruptions",
+        "name": "Playback stops and restarts"
+      },
+      {
+        "description": "The app plays a different song or album than the one the user selected.",
+        "id": "wrong_track_plays",
+        "name": "Wrong track plays"
+      },
+      {
+        "description": "Users report poor audio quality, very low volume, or dissatisfaction with sound quality.",
+        "id": "audio_quality_and_volume",
+        "name": "Audio quality and volume"
+      },
+      {
+        "description": "Playback does not stay in sync across devices, and Bluetooth connections cause unexpected song changes or disconnects.",
+        "id": "bluetooth_and_device_switching",
+        "name": "Bluetooth and device switching"
+      },
+      {
+        "description": "The app is slow, freezes, gets stuck loading, or drains battery after updates.",
+        "id": "performance_and_battery",
+        "name": "Performance, freezing, and battery drain"
+      },
+      {
+        "description": "playback complaints not covered above",
+        "id": "general",
+        "name": "Other playback complaints"
+      }
+    ],
+    "support": [
+      {
+        "description": "Users say support ignores messages, takes too long to respond, or does not reply to reviews.",
+        "id": "slow_or_no_response",
+        "name": "Slow or no response from support"
+      },
+      {
+        "description": "Users describe support agents as unhelpful or in need of retraining, and say they cannot easily report bugs.",
+        "id": "poor_support_quality",
+        "name": "Poor support quality"
+      },
+      {
+        "description": "support complaints not covered above",
+        "id": "general",
+        "name": "Other support complaints"
+      }
+    ],
+    "usability": [
+      {
+        "description": "Users complain that ads are too frequent, too loud, or inserted between every few songs in the free version.",
+        "id": "ad_frequency_loudness",
+        "name": "Ad frequency and loudness"
+      },
+      {
+        "description": "Problems using skip, shuffle, repeat, queue or song-selection controls that the review does not describe as Premium-only",
+        "id": "playback_controls_and_queue",
+        "name": "Playback controls, shuffle and queue"
+      },
+      {
+        "description": "Users report UI changes, disappearing buttons, hard-to-find options, and unwanted features like Spotify Connect defaults or popups.",
+        "id": "ui_changes_and_controls",
+        "name": "UI changes and missing controls"
+      },
+      {
+        "description": "usability complaints not covered above",
+        "id": "general",
+        "name": "Other usability complaints"
+      }
+    ]
+  },
+  "version": "taxonomy-v1"
+}

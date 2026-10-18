@@ -1,0 +1,17 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792353953.811316,
+  "ingest": {
+    "pending": 500
+  },
+  "run": "dev500_q2",
+  "spent_after_usd": 0.645678,
+  "spent_before_usd": 0.645678,
+  "spent_this_command_usd": 0.0,
+  "stage": "ingest",
+  "stage_seconds": {
+    "ingest": 0.013
+  },
+  "started_at": 1792353953.796085,
+  "wall_clock_s": 0.013
+}

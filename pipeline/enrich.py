@@ -26,10 +26,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from prompts import jev_questions_v1 as Q  # noqa: E402
 
-SCHEMA_VERSION = "schema-v1"
+SCHEMA_VERSION = "schema-v2"  # v2: needs_review threshold 0.5 -> 0.7, chosen on dev10k verifier disagreements
 BATCH_SIZE = 50
 JEV_MODEL = "jev-latest"
-NEEDS_REVIEW_CONF = 0.5          # topic or intent confidence below this -> needs_review
+NEEDS_REVIEW_CONF = 0.7          # topic or intent confidence below this -> needs_review
 EST_TOKENS_PER_CALL = 1600       # worst-case reservation (measured ~1,170 input tokens per call)
 MAX_TRANSIENT_ATTEMPTS = 3       # API errors: initial + 2 retries with backoff + jitter
 MAX_INVALID_ATTEMPTS = 2         # invalid model output: initial + 1 retry, then quarantine

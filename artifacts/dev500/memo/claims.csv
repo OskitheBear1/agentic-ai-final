@@ -1,0 +1,10 @@
+claim_id,issue_id,metric,value
+C1,billing.premium_gated_features,priority_score,94
+C2,billing.premium_gated_features,severity_sum,94
+C3,billing.premium_gated_features,complaint_count,33
+C4,billing.premium_gated_features,mean_severity,2.848485
+C5,usability.ad_frequency_and_length,priority_score,54
+C6,usability.ad_frequency_and_length,complaint_count,25
+C7,playback.app_crashes_and_freezes,complaint_count,10
+C8,playback.app_crashes_and_freezes,mean_severity,3.800000
+C9,playback.app_crashes_and_freezes,priority_score,38

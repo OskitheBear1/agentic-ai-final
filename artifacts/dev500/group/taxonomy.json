@@ -1,0 +1,197 @@
+{
+  "source": "proposed by claude-haiku-5-5 (group-v1) from run dev500",
+  "topics": {
+    "access": [
+      {
+        "description": "Users cannot log in or are shown errors when attempting to sign in, including password and phone number rejections.",
+        "id": "login_failure",
+        "name": "Login failure"
+      },
+      {
+        "description": "Users are logged out of the account without action and then cannot sign back in.",
+        "id": "unexpected_logout",
+        "name": "Unexpected logout"
+      },
+      {
+        "description": "The app reports no internet connection during login even though other apps and the device are online.",
+        "id": "false_offline_error",
+        "name": "False no-internet error"
+      },
+      {
+        "description": "Users lose access to their account or saved playlists after a suspected hack or account compromise.",
+        "id": "account_security_access_loss",
+        "name": "Account access loss from security issues"
+      },
+      {
+        "description": "access complaints not covered above",
+        "id": "general",
+        "name": "Other access complaints"
+      }
+    ],
+    "billing": [
+      {
+        "description": "Basic features such as skipping, choosing songs, replaying, and viewing lyrics now require a premium subscription.",
+        "id": "premium_gated_features",
+        "name": "Features moved behind premium"
+      },
+      {
+        "description": "Free users are limited to a small number of skips per hour or day.",
+        "id": "skip_limit",
+        "name": "Skip limit"
+      },
+      {
+        "description": "Users are repeatedly shown prompts to try or buy premium, interrupting use.",
+        "id": "premium_upsell_prompts",
+        "name": "Frequent premium upsell prompts"
+      },
+      {
+        "description": "Users cannot complete a premium subscription purchase and see a blank page or get stuck after subscribing.",
+        "id": "subscription_purchase_failure",
+        "name": "Subscription purchase failure"
+      },
+      {
+        "description": "billing complaints not covered above",
+        "id": "general",
+        "name": "Other billing complaints"
+      }
+    ],
+    "catalog": [
+      {
+        "description": "Users cannot find certain songs or artists, or the catalog feels limited or empty.",
+        "id": "missing_songs",
+        "name": "Missing songs"
+      },
+      {
+        "description": "Users dislike the irrelevant or unwanted song recommendations, which persist even when turned off.",
+        "id": "recommendation_quality",
+        "name": "Recommendation quality"
+      },
+      {
+        "description": "Users find that full songs are replaced by 30-second clips or that podcasts are hard to access.",
+        "id": "podcast_discovery_and_previews",
+        "name": "Podcast and preview limitations"
+      },
+      {
+        "description": "The search function within playlists was removed, making it hard to find songs.",
+        "id": "playlist_search_removed",
+        "name": "Playlist search removed"
+      },
+      {
+        "description": "catalog complaints not covered above",
+        "id": "general",
+        "name": "Other catalog complaints"
+      }
+    ],
+    "downloads": [
+      {
+        "description": "Previously downloaded songs are gone when users go offline or after storage changes.",
+        "id": "downloads_disappear",
+        "name": "Downloaded content disappears"
+      },
+      {
+        "description": "Offline mode does not work, or downloaded content cannot be accessed without a connection.",
+        "id": "offline_mode_failure",
+        "name": "Offline mode failure"
+      },
+      {
+        "description": "Song downloads get stuck in the background and only resume when the app is opened.",
+        "id": "background_download_stalls",
+        "name": "Background downloads stall"
+      },
+      {
+        "description": "downloads complaints not covered above",
+        "id": "general",
+        "name": "Other downloads complaints"
+      }
+    ],
+    "other": [
+      {
+        "description": "Users express broad disappointment with the latest update without citing a specific issue.",
+        "id": "general_dissatisfaction_with_update",
+        "name": "Dissatisfaction with recent update"
+      },
+      {
+        "description": "Users object to specific content, artists, or platform stances and say they will stop using the app.",
+        "id": "content_and_political_concerns",
+        "name": "Content and political concerns"
+      },
+      {
+        "description": "Users post profanity, insults, or very short negative remarks without describing a specific problem.",
+        "id": "abusive_or_non_specific_feedback",
+        "name": "Abusive or non-specific feedback"
+      },
+      {
+        "description": "other complaints not covered above",
+        "id": "general",
+        "name": "Other other complaints"
+      }
+    ],
+    "playback": [
+      {
+        "description": "The app crashes on launch, gets stuck on the loading screen, or stops playback mid-song, especially after updates.",
+        "id": "app_crashes_and_freezes",
+        "name": "App crashes and freezes"
+      },
+      {
+        "description": "Music stops or fails to play because the app wrongly reports no connection, including offline mode and Wi-Fi issues.",
+        "id": "playback_connectivity_errors",
+        "name": "Playback connectivity errors"
+      },
+      {
+        "description": "Casting to other devices, Google Assistant, and alarm integrations fail to start or control playback.",
+        "id": "device_casting_and_assistant_integration",
+        "name": "Device casting and assistant integration"
+      },
+      {
+        "description": "Users report poor sound quality compared to other apps or lagging podcast playback.",
+        "id": "audio_quality_and_lag",
+        "name": "Audio quality and lag"
+      },
+      {
+        "description": "playback complaints not covered above",
+        "id": "general",
+        "name": "Other playback complaints"
+      }
+    ],
+    "support": [
+      {
+        "description": "Users report that problems persist after reporting them or after reinstalling, with no visible fix.",
+        "id": "no_response_to_issues",
+        "name": "No response to reported issues"
+      },
+      {
+        "description": "support complaints not covered above",
+        "id": "general",
+        "name": "Other support complaints"
+      }
+    ],
+    "usability": [
+      {
+        "description": "Users complain about too many ads, ads played back-to-back, and long unskippable ad breaks.",
+        "id": "ad_frequency_and_length",
+        "name": "Excessive or unskippable ads"
+      },
+      {
+        "description": "The app plays different songs than selected, forces shuffle, or inserts recommended tracks into playlists and liked songs.",
+        "id": "unwanted_autoplay_and_shuffle",
+        "name": "Unwanted autoplay and shuffle behavior"
+      },
+      {
+        "description": "Users find the redesigned home screen, menus, and icons harder to use and navigate.",
+        "id": "layout_and_navigation_changes",
+        "name": "Layout and navigation changes"
+      },
+      {
+        "description": "Users dislike the lyrics font or find that lyrics are not shown or fail to load.",
+        "id": "lyrics_display_and_font",
+        "name": "Lyrics display and font"
+      },
+      {
+        "description": "usability complaints not covered above",
+        "id": "general",
+        "name": "Other usability complaints"
+      }
+    ]
+  },
+  "version": "group-v1"
+}

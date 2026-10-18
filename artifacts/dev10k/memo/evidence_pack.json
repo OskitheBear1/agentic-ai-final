@@ -1,0 +1,511 @@
+{
+  "issues_ranked_total": 34,
+  "scope_note": "Classified scope only; first and last calendar months are partial.",
+  "top_issues": [
+    {
+      "cancellation_count": "138",
+      "complaint_count": "689",
+      "complaints_by_month": {
+        "2022-05": 6,
+        "2022-06": 7,
+        "2022-07": 12,
+        "2022-08": 10,
+        "2022-09": 12,
+        "2022-10": 7,
+        "2022-11": 8,
+        "2022-12": 12,
+        "2023-01": 8,
+        "2023-02": 5,
+        "2023-03": 8,
+        "2023-04": 11,
+        "2023-05": 10,
+        "2023-06": 18,
+        "2023-07": 15,
+        "2023-08": 22,
+        "2023-09": 68,
+        "2023-10": 363,
+        "2023-11": 87
+      },
+      "description": "Features such as skipping, shuffling, choosing songs, or queueing now require a Premium subscription, which users feel is unfair.",
+      "issue_id": "billing.basic_features_behind_premium",
+      "mean_severity": "2.859216",
+      "name": "Basic features locked behind premium",
+      "priority_score": "1970",
+      "rank": "1",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "We cannot play music without premion what is this app is ruined",
+          "review_id": "4aaf911e-2ab6-4ccb-a0b7-4c6336f729c8",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "You are basically downloading an app that doesn't let you do anything unless you pay If you don't it just sits there.",
+          "review_id": "8d344fdd-8c04-4a86-907d-3e3faf3a9855",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "new update is so off. now is app only for paid users.",
+          "review_id": "52224e6f-239b-4375-bc32-8f7239bd66c3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Cant use stuff or stream without premium",
+          "review_id": "e8a47caf-064b-4ebb-9ceb-f17477e6c3a1",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "63",
+      "severity_sum": "1970",
+      "share_of_complaints": "0.1516",
+      "share_of_complaints_pct": "15.2%"
+    },
+    {
+      "cancellation_count": "39",
+      "complaint_count": "948",
+      "complaints_by_month": {
+        "2022-05": 5,
+        "2022-06": 5,
+        "2022-07": 10,
+        "2022-08": 13,
+        "2022-09": 11,
+        "2022-10": 5,
+        "2022-11": 8,
+        "2022-12": 17,
+        "2023-01": 21,
+        "2023-02": 10,
+        "2023-03": 7,
+        "2023-04": 8,
+        "2023-05": 13,
+        "2023-06": 9,
+        "2023-07": 533,
+        "2023-08": 29,
+        "2023-09": 39,
+        "2023-10": 137,
+        "2023-11": 68
+      },
+      "description": "Users express broad negative sentiment, such as calling the app bad or garbage, without describing a specific issue.",
+      "issue_id": "other.general_dissatisfaction",
+      "mean_severity": "1.819620",
+      "name": "General dissatisfaction",
+      "priority_score": "1725",
+      "rank": "2",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Spotify has really become the worst!!!! It don't work at all!!! They really need to work on this app",
+          "review_id": "8f628cd8-8216-449a-b9b6-482f5dbb9edf",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Does this app ever work? updated 11/2023.. like seriously does it ever?",
+          "review_id": "c3a26471-eedb-4ee6-876a-4e8e133d67b8",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Never worked right",
+          "review_id": "4b009071-4f87-463d-aa9b-4651af100892",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "It just keeps getting buggier and buggier it's barely usable and I've tried on several devices it's just bad",
+          "review_id": "26d8de64-257c-4e88-b048-0fcf1c838e18",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "3",
+      "severity_sum": "1725",
+      "share_of_complaints": "0.2086",
+      "share_of_complaints_pct": "20.9%"
+    },
+    {
+      "cancellation_count": "31",
+      "complaint_count": "495",
+      "complaints_by_month": {
+        "2022-05": 8,
+        "2022-06": 19,
+        "2022-07": 29,
+        "2022-08": 22,
+        "2022-09": 22,
+        "2022-10": 24,
+        "2022-11": 21,
+        "2022-12": 26,
+        "2023-01": 24,
+        "2023-02": 18,
+        "2023-03": 30,
+        "2023-04": 15,
+        "2023-05": 28,
+        "2023-06": 29,
+        "2023-07": 37,
+        "2023-08": 26,
+        "2023-09": 32,
+        "2023-10": 52,
+        "2023-11": 33
+      },
+      "description": "Users complain that ads are too frequent, too loud, or inserted between every few songs in the free version.",
+      "issue_id": "usability.ad_frequency_loudness",
+      "mean_severity": "2.115152",
+      "name": "Ad frequency and loudness",
+      "priority_score": "1047",
+      "rank": "3",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Update: my playlist, that had hundreds of songs that took years to put together, just vanished.",
+          "review_id": "ee11e1df-cb73-4c3a-b5e8-7268c7872b01",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "useless music app music k naam pe khaali ad dikhata hai.",
+          "review_id": "6eb64519-37d4-4591-a47a-bbb96357de36",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Cant play anything...just keep the ads bro u gotta stop us from lisetning to our favourites",
+          "review_id": "20642204-41d2-419e-892a-eec423753c99",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Volume of ads is way louder than the volume of the music. Makes the app unusable.",
+          "review_id": "933b1cf2-8fa9-46aa-9a06-85fd89533a99",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "9",
+      "severity_sum": "1047",
+      "share_of_complaints": "0.1089",
+      "share_of_complaints_pct": "10.9%"
+    },
+    {
+      "cancellation_count": "33",
+      "complaint_count": "322",
+      "complaints_by_month": {
+        "2022-05": 12,
+        "2022-06": 14,
+        "2022-07": 12,
+        "2022-08": 17,
+        "2022-09": 16,
+        "2022-10": 8,
+        "2022-11": 11,
+        "2022-12": 21,
+        "2023-01": 20,
+        "2023-02": 12,
+        "2023-03": 9,
+        "2023-04": 12,
+        "2023-05": 18,
+        "2023-06": 13,
+        "2023-07": 11,
+        "2023-08": 12,
+        "2023-09": 25,
+        "2023-10": 60,
+        "2023-11": 19
+      },
+      "description": "Users are frustrated by limited skips and by queue, playlist position, or playback order behaving unexpectedly.",
+      "issue_id": "usability.skip_and_playback_control_limits",
+      "mean_severity": "2.891304",
+      "name": "Skip and playback control limits",
+      "priority_score": "931",
+      "rank": "4",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Was about stop listening to music but now spotify using same shuffle and same artist over over and OVER.",
+          "review_id": "7a9422f5-7266-4f53-adf3-7cc65803e8bf",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "There's no other way to get rid of of the shuffle and it's really annoying I tried so many things and also now I can't play the song I just want to listen to music while doing something old spotiffy put on settings turn off shuffle",
+          "review_id": "62a8a675-1293-4090-a775-2d48ca8cafdc",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Not working showing play list empty all the time",
+          "review_id": "ff434191-87c8-4a76-a30a-de1591982192",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Have loved the app for a long time, but after the last update I can no longer continue playing a playlist. It finishes the last played song and then resets the entire list.",
+          "review_id": "5f4ffff8-311b-483c-b800-8d11c9b73e36",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "22",
+      "severity_sum": "931",
+      "share_of_complaints": "0.0709",
+      "share_of_complaints_pct": "7.1%"
+    },
+    {
+      "cancellation_count": "24",
+      "complaint_count": "232",
+      "complaints_by_month": {
+        "2022-05": 9,
+        "2022-06": 10,
+        "2022-07": 23,
+        "2022-08": 7,
+        "2022-09": 7,
+        "2022-10": 5,
+        "2022-11": 7,
+        "2022-12": 43,
+        "2023-01": 12,
+        "2023-02": 8,
+        "2023-03": 8,
+        "2023-04": 7,
+        "2023-05": 11,
+        "2023-06": 10,
+        "2023-07": 12,
+        "2023-08": 14,
+        "2023-09": 7,
+        "2023-10": 24,
+        "2023-11": 8
+      },
+      "description": "Songs pause, stop mid-track, or restart from the beginning, or fail to start playing.",
+      "issue_id": "playback.playback_interruptions",
+      "mean_severity": "3.409483",
+      "name": "Playback stops and restarts",
+      "priority_score": "791",
+      "rank": "5",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "I dont know what happened, but the app experience has gotten worse over the course of a month.",
+          "review_id": "651e6e7b-f93e-4369-9631-15c73ddcd4ad",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Can't even open. Keeps saying there was an error",
+          "review_id": "945884c2-60b2-4063-bf34-48fe6d26026a",
+          "severity": 4
+        },
+        {
+          "intent": "cancellation",
+          "quote": "This version its worse you cant play a song,The old version is better than this please change for us if not you are going to lose,its becoming worse",
+          "review_id": "59fb8b52-9c11-4fd1-913a-644b1f45b2a9",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Please fix the app. It keeps stopping mid song and then restarting from the beginning.",
+          "review_id": "9a0f86dd-f3a3-455a-825e-cba00c2ccf54",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "100",
+      "severity_sum": "791",
+      "share_of_complaints": "0.0511",
+      "share_of_complaints_pct": "5.1%"
+    },
+    {
+      "cancellation_count": "30",
+      "complaint_count": "233",
+      "complaints_by_month": {
+        "2022-05": 6,
+        "2022-06": 6,
+        "2022-07": 7,
+        "2022-08": 9,
+        "2022-09": 12,
+        "2022-10": 9,
+        "2022-11": 10,
+        "2022-12": 4,
+        "2023-01": 9,
+        "2023-02": 5,
+        "2023-03": 35,
+        "2023-04": 31,
+        "2023-05": 10,
+        "2023-06": 11,
+        "2023-07": 4,
+        "2023-08": 6,
+        "2023-09": 10,
+        "2023-10": 35,
+        "2023-11": 14
+      },
+      "description": "Users report UI changes, disappearing buttons, hard-to-find options, and unwanted features like Spotify Connect defaults or popups.",
+      "issue_id": "usability.ui_changes_and_controls",
+      "mean_severity": "2.635193",
+      "name": "UI changes and missing controls",
+      "priority_score": "614",
+      "rank": "6",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "I just started using this a couple of weeks ago and somehow the layout got worse. I can't really view songs in playlists and albums and can't listen to specific songs anymore. Garbage app.",
+          "review_id": "49a3d13d-5469-4ce5-88f7-4e5166e49adc",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "New UI completely breaks the app. Absolutely awful.",
+          "review_id": "730d333b-e11d-4467-bb69-33ac63194f83",
+          "severity": 4
+        },
+        {
+          "intent": "cancellation",
+          "quote": "Very invasive app, couldn't figure out how to turn it off in the background (or turn it off in general).",
+          "review_id": "013d0737-24f8-481e-b3bc-b3aad1996acf",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "very bad can't even adjust the music",
+          "review_id": "153063a6-6c9d-41f9-ad3a-b8608d210761",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "14",
+      "severity_sum": "614",
+      "share_of_complaints": "0.0513",
+      "share_of_complaints_pct": "5.1%"
+    },
+    {
+      "cancellation_count": "42",
+      "complaint_count": "261",
+      "complaints_by_month": {
+        "2022-06": 3,
+        "2022-07": 5,
+        "2022-09": 1,
+        "2022-11": 1,
+        "2022-12": 3,
+        "2023-01": 4,
+        "2023-03": 2,
+        "2023-04": 3,
+        "2023-05": 2,
+        "2023-06": 6,
+        "2023-07": 7,
+        "2023-08": 1,
+        "2023-09": 25,
+        "2023-10": 150,
+        "2023-11": 48
+      },
+      "description": "Users generally say recent updates made the app worse, without specifying a particular feature.",
+      "issue_id": "other.negative_update_reaction",
+      "mean_severity": "2.022989",
+      "name": "Negative reaction to recent updates",
+      "priority_score": "528",
+      "rank": "7",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "This application has become useless wit new update",
+          "review_id": "eec69a7d-e5f4-4a4f-ba73-d5ab20381f54",
+          "severity": 4
+        },
+        {
+          "intent": "cancellation",
+          "quote": "The update made the app useless .... Uninstall krdia ye app ab bekar hai ... Wynk hi theek h",
+          "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "New update has totally destroyed the app",
+          "review_id": "d1c8823b-b7f8-4127-970c-fe3fe33526c3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "After the update it became useless",
+          "review_id": "e61eb77e-1113-463c-a756-3e97ab43dc81",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "6",
+      "severity_sum": "528",
+      "share_of_complaints": "0.0574",
+      "share_of_complaints_pct": "5.7%"
+    },
+    {
+      "cancellation_count": "9",
+      "complaint_count": "137",
+      "complaints_by_month": {
+        "2022-05": 7,
+        "2022-06": 7,
+        "2022-07": 16,
+        "2022-08": 4,
+        "2022-09": 7,
+        "2022-10": 5,
+        "2022-11": 5,
+        "2022-12": 8,
+        "2023-01": 12,
+        "2023-02": 1,
+        "2023-03": 5,
+        "2023-04": 6,
+        "2023-05": 6,
+        "2023-06": 5,
+        "2023-07": 8,
+        "2023-08": 13,
+        "2023-09": 10,
+        "2023-10": 10,
+        "2023-11": 2
+      },
+      "description": "The app is slow, freezes, gets stuck loading, or drains battery after updates.",
+      "issue_id": "playback.performance_and_battery",
+      "mean_severity": "3.306569",
+      "name": "Performance, freezing, and battery drain",
+      "priority_score": "453",
+      "rank": "8",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Constantly freezes.",
+          "review_id": "66d95ee3-28b4-48ba-9ea4-ca2b340ee5e3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Constantly crashes. Takes ages to load.",
+          "review_id": "99bf70f9-8a9e-4d2b-a305-1cfabd73e985",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Terrible. The app would not open.",
+          "review_id": "3e8e46eb-7327-4fa7-80e9-ebe312b6117c",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Have been using Spotify for a very long time but now the app is just crashing since the latest update.",
+          "review_id": "4a806587-0dde-4fb4-b4f1-f5c7d197c927",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "60",
+      "severity_sum": "453",
+      "share_of_complaints": "0.0301",
+      "share_of_complaints_pct": "3.0%"
+    }
+  ],
+  "totals": {
+    "by_intent": {
+      "cancellation": 470,
+      "complaint": 4074,
+      "praise": 4219,
+      "request": 385,
+      "unclear": 852
+    },
+    "by_topic": {
+      "access": 168,
+      "billing": 986,
+      "catalog": 607,
+      "downloads": 161,
+      "other": 5877,
+      "playback": 658,
+      "support": 14,
+      "usability": 1529
+    },
+    "classified_reviews": 10000,
+    "complaint_or_cancellation_reviews": 4544
+  }
+}

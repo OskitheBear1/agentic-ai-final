@@ -1,0 +1,134 @@
+{
+  "agreement": {
+    "intent": 0.9,
+    "sentiment": 0.96,
+    "severity": 0.85,
+    "severity_within_1": 0.99,
+    "topic": 0.8233
+  },
+  "declared_sample_size": 300,
+  "intent_confusion_enricher_vs_verifier": [
+    [
+      "cancellation->complaint",
+      6
+    ],
+    [
+      "praise->unclear",
+      5
+    ],
+    [
+      "unclear->praise",
+      3
+    ],
+    [
+      "praise->complaint",
+      3
+    ],
+    [
+      "request->praise",
+      2
+    ],
+    [
+      "complaint->unclear",
+      2
+    ],
+    [
+      "request->complaint",
+      2
+    ],
+    [
+      "unclear->complaint",
+      2
+    ],
+    [
+      "complaint->cancellation",
+      2
+    ],
+    [
+      "complaint->request",
+      1
+    ],
+    [
+      "cancellation->unclear",
+      1
+    ],
+    [
+      "praise->cancellation",
+      1
+    ]
+  ],
+  "needs_review_flag_vs_disagreement": {
+    "flagged": 25,
+    "flagged_and_disagree": 15,
+    "unflagged_and_disagree": 62
+  },
+  "prompt_version": "verify-v1",
+  "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+  "sampled": 300,
+  "topic_confusion_enricher_vs_verifier": [
+    [
+      "other->catalog",
+      8
+    ],
+    [
+      "other->billing",
+      6
+    ],
+    [
+      "usability->catalog",
+      5
+    ],
+    [
+      "usability->playback",
+      4
+    ],
+    [
+      "other->playback",
+      4
+    ],
+    [
+      "other->usability",
+      4
+    ],
+    [
+      "playback->usability",
+      3
+    ],
+    [
+      "downloads->playback",
+      3
+    ],
+    [
+      "billing->usability",
+      2
+    ],
+    [
+      "usability->other",
+      2
+    ],
+    [
+      "catalog->usability",
+      2
+    ],
+    [
+      "playback->billing",
+      1
+    ],
+    [
+      "catalog->playback",
+      1
+    ],
+    [
+      "billing->playback",
+      1
+    ],
+    [
+      "catalog->downloads",
+      1
+    ]
+  ],
+  "verified": 300,
+  "verifier_failed": 0,
+  "verifier_model": "claude-haiku-5-5",
+  "wall_s": 42.88
+}

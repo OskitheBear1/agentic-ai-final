@@ -1,0 +1,94 @@
+{
+  "n_cases": 50,
+  "valid_predictions": 50,
+  "missing_or_quarantined": 0,
+  "ambiguous_cases_marked_by_human": 11,
+  "agreement": {
+    "topic": 0.82,
+    "intent": 0.76,
+    "severity_exact": 0.7,
+    "sentiment_within_0.5": 0.86,
+    "all_three_core": 0.54
+  },
+  "severity_mae": 0.32,
+  "sentiment_mae": 0.2025,
+  "evidence_quote": {
+    "exact_substring": 50,
+    "whole_review_used": 47
+  },
+  "needs_review_as_prediction": {
+    "flagged": 4,
+    "flagged_and_wrong": 4,
+    "wrong_total": 23,
+    "wrong_but_unflagged": 19,
+    "agreement_with_human_flag": 0.78
+  },
+  "per_topic_counts": {
+    "human": {
+      "other": 32,
+      "usability": 9,
+      "playback": 4,
+      "support": 1,
+      "catalog": 3,
+      "downloads": 1
+    },
+    "predicted": {
+      "catalog": 6,
+      "other": 26,
+      "usability": 8,
+      "playback": 5,
+      "billing": 4,
+      "downloads": 1
+    }
+  },
+  "topic_confusion_human_to_pred": {
+    "usability": {
+      "usability": 7,
+      "billing": 2
+    },
+    "playback": {
+      "playback": 4
+    },
+    "downloads": {
+      "downloads": 1
+    },
+    "catalog": {
+      "catalog": 3
+    },
+    "support": {
+      "playback": 1
+    },
+    "other": {
+      "usability": 1,
+      "catalog": 3,
+      "billing": 2,
+      "other": 26
+    }
+  },
+  "intent_confusion_human_to_pred": {
+    "complaint": {
+      "complaint": 13
+    },
+    "request": {
+      "complaint": 3,
+      "request": 1
+    },
+    "praise": {
+      "complaint": 1,
+      "praise": 19,
+      "unclear": 1
+    },
+    "cancellation": {
+      "cancellation": 1
+    },
+    "unclear": {
+      "complaint": 4,
+      "request": 1,
+      "praise": 1,
+      "cancellation": 1,
+      "unclear": 4
+    }
+  },
+  "entities_predicted_not_in_human_list": 32,
+  "note": "50 cases are a small diagnostic sample, not a population accuracy estimate. Golden labels were not used to tune prompts."
+}
