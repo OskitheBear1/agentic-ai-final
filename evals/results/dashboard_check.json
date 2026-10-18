@@ -1,0 +1,56 @@
+{
+  "base_url": "https://agentic-ai-final-three.vercel.app",
+  "passed": true,
+  "checks": [
+    {
+      "check": "ranking has every saved issue in the same order",
+      "ok": true,
+      "detail": "34 issues"
+    },
+    {
+      "check": "ranking numbers equal aggregates.csv",
+      "ok": true,
+      "detail": "all fields"
+    },
+    {
+      "check": "ranking equals grading/ranking.csv",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "topic/intent totals equal evidence pack",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "reviews table holds the 100,000 classified reviews",
+      "ok": true,
+      "detail": "100000"
+    },
+    {
+      "check": "grouped complaints in DB equal evidence pack",
+      "ok": true,
+      "detail": "45084"
+    },
+    {
+      "check": "memo text and recommendation equal memo.json",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every memo claim served and matches the ranking",
+      "ok": true,
+      "detail": "11 claims"
+    },
+    {
+      "check": "every cited review is served",
+      "ok": true,
+      "detail": "5 reviews"
+    },
+    {
+      "check": "sampled review labels equal records.jsonl.gz",
+      "ok": true,
+      "detail": "5 reviews"
+    }
+  ]
+}
