@@ -1,0 +1,152 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792358181.4460611,
+  "run": "full",
+  "spent_after_usd": 4.782874,
+  "spent_before_usd": 4.758523,
+  "spent_this_command_usd": 0.024351,
+  "stage": "verify",
+  "stage_seconds": {
+    "verify": 132.087
+  },
+  "started_at": 1792358049.320937,
+  "verify": {
+    "agreement": {
+      "intent": 0.92,
+      "sentiment": 0.959,
+      "severity": 0.863,
+      "severity_within_1": 0.989,
+      "topic": 0.826
+    },
+    "declared_sample_size": 1000,
+    "intent_confusion_enricher_vs_verifier": [
+      [
+        "cancellation->complaint",
+        15
+      ],
+      [
+        "request->complaint",
+        12
+      ],
+      [
+        "complaint->unclear",
+        10
+      ],
+      [
+        "unclear->praise",
+        8
+      ],
+      [
+        "praise->complaint",
+        7
+      ],
+      [
+        "praise->unclear",
+        6
+      ],
+      [
+        "complaint->request",
+        5
+      ],
+      [
+        "request->praise",
+        5
+      ],
+      [
+        "complaint->cancellation",
+        5
+      ],
+      [
+        "unclear->complaint",
+        4
+      ],
+      [
+        "cancellation->unclear",
+        1
+      ],
+      [
+        "praise->request",
+        1
+      ],
+      [
+        "request->unclear",
+        1
+      ]
+    ],
+    "needs_review_flag_vs_disagreement": {
+      "flagged": 272,
+      "flagged_and_disagree": 130,
+      "unflagged_and_disagree": 108
+    },
+    "prompt_version": "verify-v1",
+    "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+    "sampled": 1000,
+    "topic_confusion_enricher_vs_verifier": [
+      [
+        "other->catalog",
+        32
+      ],
+      [
+        "usability->catalog",
+        24
+      ],
+      [
+        "other->playback",
+        17
+      ],
+      [
+        "other->billing",
+        14
+      ],
+      [
+        "billing->usability",
+        14
+      ],
+      [
+        "usability->playback",
+        13
+      ],
+      [
+        "other->usability",
+        10
+      ],
+      [
+        "catalog->usability",
+        7
+      ],
+      [
+        "billing->other",
+        5
+      ],
+      [
+        "playback->usability",
+        5
+      ],
+      [
+        "usability->other",
+        5
+      ],
+      [
+        "usability->billing",
+        4
+      ],
+      [
+        "catalog->other",
+        4
+      ],
+      [
+        "usability->downloads",
+        3
+      ],
+      [
+        "playback->catalog",
+        3
+      ]
+    ],
+    "verified": 1000,
+    "verifier_failed": 0,
+    "verifier_model": "claude-haiku-5-5",
+    "wall_s": 131.72
+  },
+  "wall_clock_s": 132.093
+}

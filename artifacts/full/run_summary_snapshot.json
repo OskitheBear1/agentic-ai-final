@@ -1,0 +1,15 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792358043.848087,
+  "run": "full",
+  "snapshot": "/Users/jbond/Code/agentic-ai/final-assignment/artifacts/full/checkpoints/checkpoint_after.json",
+  "spent_after_usd": 4.758523,
+  "spent_before_usd": 4.758523,
+  "spent_this_command_usd": 0.0,
+  "stage": "snapshot",
+  "stage_seconds": {
+    "snapshot": 0.522
+  },
+  "started_at": 1792358043.284113,
+  "wall_clock_s": 0.522
+}

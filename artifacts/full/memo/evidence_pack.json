@@ -1,0 +1,515 @@
+{
+  "issues_ranked_total": 34,
+  "scope_note": "Classified scope only; first and last calendar months are partial.",
+  "top_issues": [
+    {
+      "cancellation_count": "650",
+      "complaint_count": "11062",
+      "complaints_by_month": {
+        "2022-05": 104,
+        "2022-06": 161,
+        "2022-07": 190,
+        "2022-08": 178,
+        "2022-09": 125,
+        "2022-10": 122,
+        "2022-11": 123,
+        "2022-12": 227,
+        "2023-01": 182,
+        "2023-02": 95,
+        "2023-03": 111,
+        "2023-04": 97,
+        "2023-05": 160,
+        "2023-06": 146,
+        "2023-07": 5709,
+        "2023-08": 389,
+        "2023-09": 472,
+        "2023-10": 1668,
+        "2023-11": 803
+      },
+      "description": "other complaints not covered above",
+      "issue_id": "other.general",
+      "mean_severity": "1.846321",
+      "name": "Other other complaints",
+      "priority_score": "20424",
+      "rank": "1",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Pushing sexual material on children. It goes against their own community standards and also is abhorrent to be targeted at children. Just search 'audio for kids' on their platform if you need any clarification.",
+          "review_id": "dc1bc630-5867-44b0-8b93-4130cdb8d478",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "This app may access ur dataa plz dont download",
+          "review_id": "b9782424-15b4-466f-9f0e-d8f54704c181",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "It is one of the biggest fraud app ever I have come through. I suggest u never instal this app",
+          "review_id": "9859accb-6597-4e12-b554-97205d06d602",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "This app support cyber bullying",
+          "review_id": "dc04e457-da18-4ad5-be3f-5b533cd815ac",
+          "severity": 5
+        }
+      ],
+      "severity_4plus_count": "292",
+      "severity_sum": "20424",
+      "share_of_complaints": "0.2454",
+      "share_of_complaints_pct": "24.5%"
+    },
+    {
+      "cancellation_count": "1191",
+      "complaint_count": "6254",
+      "complaints_by_month": {
+        "2022-05": 45,
+        "2022-06": 88,
+        "2022-07": 118,
+        "2022-08": 94,
+        "2022-09": 79,
+        "2022-10": 72,
+        "2022-11": 107,
+        "2022-12": 84,
+        "2023-01": 80,
+        "2023-02": 57,
+        "2023-03": 68,
+        "2023-04": 72,
+        "2023-05": 133,
+        "2023-06": 188,
+        "2023-07": 194,
+        "2023-08": 145,
+        "2023-09": 790,
+        "2023-10": 3019,
+        "2023-11": 821
+      },
+      "description": "Features such as skipping, shuffling, choosing songs, or queueing now require a Premium subscription, which users feel is unfair.",
+      "issue_id": "billing.basic_features_behind_premium",
+      "mean_severity": "2.822673",
+      "name": "Basic features locked behind premium",
+      "priority_score": "17653",
+      "rank": "2",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Almost Everything is now premium 💸 which is a stupid idea.",
+          "review_id": "21f4f8cd-5846-44aa-9283-cfb3dc51e257",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "It's a fraud app and frud company... Forcing customers to buy premium. This isn't a way to make profits by looting your own customers.... Pathetic experience",
+          "review_id": "9321ddc2-a0ef-411a-b7e7-8437fc704d2f",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "-10000000/10 haaaa can't listen to almost all type of music n podcast coz I don't wanna switch to premium Whyyy would I pay to listen to music them my acc gets hacked haaaakaaa is not make sure",
+          "review_id": "a08eee68-d717-40cc-8083-b277c565b475",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "تطبيق سئ وغير نافع مستهلكين أموال الناس فقط اعلانات كتير لازم تدفع فلوس مش بقدر توقف الاغنيه غير لما تشترك معاهم لازم تدفع عشان تسمع اغاني معنيه التطبيق يتجسس عليك من خلال الصلاحيات اللي بيطلبها منك لا انصح بتنزيله ابدا",
+          "review_id": "46c59423-983c-4799-ad94-b3c4e3a5d261",
+          "severity": 5
+        }
+      ],
+      "severity_4plus_count": "476",
+      "severity_sum": "17653",
+      "share_of_complaints": "0.1387",
+      "share_of_complaints_pct": "13.9%"
+    },
+    {
+      "cancellation_count": "342",
+      "complaint_count": "5120",
+      "complaints_by_month": {
+        "2022-05": 116,
+        "2022-06": 240,
+        "2022-07": 257,
+        "2022-08": 299,
+        "2022-09": 243,
+        "2022-10": 275,
+        "2022-11": 221,
+        "2022-12": 264,
+        "2023-01": 213,
+        "2023-02": 211,
+        "2023-03": 224,
+        "2023-04": 165,
+        "2023-05": 199,
+        "2023-06": 246,
+        "2023-07": 425,
+        "2023-08": 322,
+        "2023-09": 366,
+        "2023-10": 571,
+        "2023-11": 263
+      },
+      "description": "Users complain that ads are too frequent, too loud, or inserted between every few songs in the free version.",
+      "issue_id": "usability.ad_frequency_loudness",
+      "mean_severity": "2.120313",
+      "name": "Ad frequency and loudness",
+      "priority_score": "10856",
+      "rank": "3",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "There are so many ads lately its ridiculous, and i cant even buy premium because my account keeps getting hacked i cant risk it. This app is unbearable as of late",
+          "review_id": "5cbca210-acbe-43d3-aec0-712cba1bcc6b",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "Ads every 2 songs with volume up loud and forcing you to pay for a reasonable amount after selling your info anyway",
+          "review_id": "1e4d3214-63de-4ba0-9870-a4ee8aa32942",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "Update: my playlist, that had hundreds of songs that took years to put together, just vanished.",
+          "review_id": "ee11e1df-cb73-4c3a-b5e8-7268c7872b01",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "Only ad no song",
+          "review_id": "3c01206f-5c70-450e-b312-72fe7a52587b",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "57",
+      "severity_sum": "10856",
+      "share_of_complaints": "0.1136",
+      "share_of_complaints_pct": "11.4%"
+    },
+    {
+      "cancellation_count": "361",
+      "complaint_count": "3265",
+      "complaints_by_month": {
+        "2022-05": 67,
+        "2022-06": 139,
+        "2022-07": 168,
+        "2022-08": 120,
+        "2022-09": 125,
+        "2022-10": 112,
+        "2022-11": 144,
+        "2022-12": 178,
+        "2023-01": 128,
+        "2023-02": 92,
+        "2023-03": 122,
+        "2023-04": 112,
+        "2023-05": 140,
+        "2023-06": 178,
+        "2023-07": 140,
+        "2023-08": 116,
+        "2023-09": 322,
+        "2023-10": 666,
+        "2023-11": 196
+      },
+      "description": "Problems using skip, shuffle, repeat, queue or song-selection controls that the review does not describe as Premium-only",
+      "issue_id": "usability.playback_controls_and_queue",
+      "mean_severity": "2.890965",
+      "name": "Playback controls, shuffle and queue",
+      "priority_score": "9439",
+      "rank": "4",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Other than the fact they collect data they shouldn't on your phone and sell it, it keeps playing random stupid songs DESPITE the fact I turned that feature off",
+          "review_id": "578e4e04-2a8d-48db-99dd-8bb34291ba21",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "Was about stop listening to music but now spotify using same shuffle and same artist over over and OVER.",
+          "review_id": "7a9422f5-7266-4f53-adf3-7cc65803e8bf",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "GREAT music app, but I cannot see my whole playlist when I enter into it. Also I cannot switch from song to song.",
+          "review_id": "35c79839-8723-454c-96ea-4268aa3f0bdf",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Literally worst app I've ever used can't even listen to your favorite song when you click on a song it takes you to some completely different song. This app is dog water🗑️🗑️🗑️🗑️",
+          "review_id": "5479181b-b36f-478b-a0ea-8162825b4a90",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "201",
+      "severity_sum": "9439",
+      "share_of_complaints": "0.0724",
+      "share_of_complaints_pct": "7.2%"
+    },
+    {
+      "cancellation_count": "214",
+      "complaint_count": "2461",
+      "complaints_by_month": {
+        "2022-05": 76,
+        "2022-06": 150,
+        "2022-07": 227,
+        "2022-08": 133,
+        "2022-09": 92,
+        "2022-10": 83,
+        "2022-11": 87,
+        "2022-12": 265,
+        "2023-01": 160,
+        "2023-02": 83,
+        "2023-03": 101,
+        "2023-04": 97,
+        "2023-05": 74,
+        "2023-06": 95,
+        "2023-07": 138,
+        "2023-08": 129,
+        "2023-09": 131,
+        "2023-10": 230,
+        "2023-11": 110
+      },
+      "description": "Songs pause, stop mid-track, or restart from the beginning, or fail to start playing.",
+      "issue_id": "playback.playback_interruptions",
+      "mean_severity": "3.419342",
+      "name": "Playback stops and restarts",
+      "priority_score": "8415",
+      "rank": "5",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Ang' Spotify noh belai khunao aram boh nang jak gu Data boh asok chaya",
+          "review_id": "6312b3a1-c280-4ca0-876f-d7e3c2c1df7c",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "Everytime I play spotify on my phone it just stops playing the music randomly. I've updated my phone all the way, updated the app, but it constantly just stops playing.",
+          "review_id": "a3794dbd-4918-4f64-9307-22a49bf6fd5a",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Song quality is good but when it not work properly there are proper network connection and everything still this not working properly get frustrated me I like to give this app only 1 star",
+          "review_id": "85becfc5-110e-4fd8-8fb4-7004d8023686",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "I don't know what the hell is wrong with this new update now. . Am not able to play the song in my liked list.. Nd not only tht am not able to skip the songs.. The searched song is not played..",
+          "review_id": "028e5c40-68ae-4588-87bd-d68d44962a5e",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "1103",
+      "severity_sum": "8415",
+      "share_of_complaints": "0.0546",
+      "share_of_complaints_pct": "5.5%"
+    },
+    {
+      "cancellation_count": "420",
+      "complaint_count": "3299",
+      "complaints_by_month": {
+        "2022-05": 12,
+        "2022-06": 14,
+        "2022-07": 26,
+        "2022-08": 23,
+        "2022-09": 5,
+        "2022-10": 19,
+        "2022-11": 26,
+        "2022-12": 38,
+        "2023-01": 19,
+        "2023-02": 11,
+        "2023-03": 34,
+        "2023-04": 28,
+        "2023-05": 32,
+        "2023-06": 45,
+        "2023-07": 95,
+        "2023-08": 26,
+        "2023-09": 354,
+        "2023-10": 1917,
+        "2023-11": 575
+      },
+      "description": "Users generally say recent updates made the app worse, without specifying a particular feature.",
+      "issue_id": "other.negative_update_reaction",
+      "mean_severity": "2.022734",
+      "name": "Negative reaction to recent updates",
+      "priority_score": "6673",
+      "rank": "6",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Worst update ever completely destroyed the app",
+          "review_id": "2ebe87cd-f01b-4dd6-86cb-f721092a4cdc",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "It's completely unbelievable how a company worth so much money can have such a poor functioning app.",
+          "review_id": "9685e12c-c5d7-4786-afae-d311eaea1bac",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Not a music player👎👎👎 worst update",
+          "review_id": "6bde46c7-6430-4a79-8e26-b40bd880ce19",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Useless app cannot use it after upgrade ridiculous just delete this app of no use at all",
+          "review_id": "1de70f44-18d5-47e1-ac04-bff96f316221",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "85",
+      "severity_sum": "6673",
+      "share_of_complaints": "0.0732",
+      "share_of_complaints_pct": "7.3%"
+    },
+    {
+      "cancellation_count": "285",
+      "complaint_count": "2007",
+      "complaints_by_month": {
+        "2022-05": 48,
+        "2022-06": 43,
+        "2022-07": 72,
+        "2022-08": 71,
+        "2022-09": 58,
+        "2022-10": 78,
+        "2022-11": 87,
+        "2022-12": 65,
+        "2023-01": 52,
+        "2023-02": 45,
+        "2023-03": 331,
+        "2023-04": 275,
+        "2023-05": 99,
+        "2023-06": 57,
+        "2023-07": 55,
+        "2023-08": 52,
+        "2023-09": 90,
+        "2023-10": 289,
+        "2023-11": 140
+      },
+      "description": "Users report UI changes, disappearing buttons, hard-to-find options, and unwanted features like Spotify Connect defaults or popups.",
+      "issue_id": "usability.ui_changes_and_controls",
+      "mean_severity": "2.568510",
+      "name": "UI changes and missing controls",
+      "priority_score": "5155",
+      "rank": "7",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "No privacy when using Bluetooth. Involuntarily having to share my music with other Bluetooth users. The worst part is, they have controls to.",
+          "review_id": "af3fba2a-b87a-45ed-a8c0-2e74f5110eba",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "With out a doubt \"car mode\" has gotten people killed . It's sucks, don't make it turn on by default",
+          "review_id": "5f9ed210-f76e-410e-82ce-8dab728260b1",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "I can't rewind, I can't skip the inbeded grifter ads by the podcasters or rewind and listen to something interesting.",
+          "review_id": "1412f06c-6d40-49c6-a5c6-76c350d22cb9",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "I like this app alot. But the problem is that i cannot open my 'liked songs' anymore. Now most of my saved songs are gone and it's extremely frustrating. I really hope this does not happen to others in the future",
+          "review_id": "46dd4db0-5dcb-4eb0-baa8-c9d821c69d5c",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "97",
+      "severity_sum": "5155",
+      "share_of_complaints": "0.0445",
+      "share_of_complaints_pct": "4.5%"
+    },
+    {
+      "cancellation_count": "91",
+      "complaint_count": "1269",
+      "complaints_by_month": {
+        "2022-05": 59,
+        "2022-06": 107,
+        "2022-07": 155,
+        "2022-08": 66,
+        "2022-09": 53,
+        "2022-10": 40,
+        "2022-11": 58,
+        "2022-12": 84,
+        "2023-01": 78,
+        "2023-02": 22,
+        "2023-03": 42,
+        "2023-04": 45,
+        "2023-05": 52,
+        "2023-06": 36,
+        "2023-07": 65,
+        "2023-08": 82,
+        "2023-09": 71,
+        "2023-10": 103,
+        "2023-11": 51
+      },
+      "description": "The app is slow, freezes, gets stuck loading, or drains battery after updates.",
+      "issue_id": "playback.performance_and_battery",
+      "mean_severity": "3.395587",
+      "name": "Performance, freezing, and battery drain",
+      "priority_score": "4309",
+      "rank": "8",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Worst app. I would recommend to use YouTube instead of this app. It will tuin your data and your smartphone",
+          "review_id": "beb4add2-a9b6-42b1-b155-2d8ff8ad82de",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "It stays on even when u turn off wasting data",
+          "review_id": "273cb2d7-7f93-458c-bf3b-4bf7b54427a2",
+          "severity": 5
+        },
+        {
+          "intent": "complaint",
+          "quote": "यह बकवास है इस ऐप को चलाने मैं 1 घंटे में पूरा 1GB खत्म हो जाता है घटिया अबे सालाइससे वाहियात ऐप मैंने आज तक जिंदगी में नहीं देखा है कोई भी भूल कर भी इस ऐप को डाउनलोड ना करें यह मेरी सलाह हैऔर आप इसे मानो तो ठीक ना मानो तो आपकीमर्जी",
+          "review_id": "569470d0-76ff-4e5d-91c9-a2d2943b63e0",
+          "severity": 5
+        },
+        {
+          "intent": "cancellation",
+          "quote": "Yesa lag raha hai ab jabardasti paisa mang raha hai isse accha app hi lock kar do",
+          "review_id": "c412a99a-1244-4ef2-a2ca-8cda6c3976ca",
+          "severity": 5
+        }
+      ],
+      "severity_4plus_count": "648",
+      "severity_sum": "4309",
+      "share_of_complaints": "0.0281",
+      "share_of_complaints_pct": "2.8%"
+    }
+  ],
+  "totals": {
+    "by_intent": {
+      "cancellation": 4524,
+      "complaint": 40560,
+      "praise": 42770,
+      "request": 3232,
+      "unclear": 8914
+    },
+    "by_topic": {
+      "access": 1585,
+      "billing": 9442,
+      "catalog": 6877,
+      "downloads": 1653,
+      "other": 58993,
+      "playback": 6360,
+      "support": 157,
+      "usability": 14933
+    },
+    "classified_reviews": 100000,
+    "complaint_or_cancellation_reviews": 45084
+  }
+}

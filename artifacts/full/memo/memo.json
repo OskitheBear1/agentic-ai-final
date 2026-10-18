@@ -1,0 +1,94 @@
+{
+  "cited_reviews": [
+    {
+      "issue_id": "billing.basic_features_behind_premium",
+      "review_id": "21f4f8cd-5846-44aa-9283-cfb3dc51e257"
+    },
+    {
+      "issue_id": "billing.basic_features_behind_premium",
+      "review_id": "9321ddc2-a0ef-411a-b7e7-8437fc704d2f"
+    },
+    {
+      "issue_id": "usability.ad_frequency_loudness",
+      "review_id": "1e4d3214-63de-4ba0-9870-a4ee8aa32942"
+    },
+    {
+      "issue_id": "playback.playback_interruptions",
+      "review_id": "a3794dbd-4918-4f64-9307-22a49bf6fd5a"
+    },
+    {
+      "issue_id": "other.general",
+      "review_id": "dc1bc630-5867-44b0-8b93-4130cdb8d478"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "complaint_count",
+      "value": "6254"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "severity_sum",
+      "value": "17653"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "billing.basic_features_behind_premium",
+      "metric": "mean_severity",
+      "value": "2.822673"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "other.general",
+      "metric": "priority_score",
+      "value": "20424"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "other.general",
+      "metric": "mean_severity",
+      "value": "1.846321"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "usability.ad_frequency_loudness",
+      "metric": "complaint_count",
+      "value": "5120"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "usability.ad_frequency_loudness",
+      "metric": "priority_score",
+      "value": "10856"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "usability.ad_frequency_loudness",
+      "metric": "mean_severity",
+      "value": "2.120313"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "playback.playback_interruptions",
+      "metric": "complaint_count",
+      "value": "2461"
+    },
+    {
+      "claim_id": "C10",
+      "issue_id": "playback.playback_interruptions",
+      "metric": "mean_severity",
+      "value": "3.419342"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "playback.playback_interruptions",
+      "metric": "priority_score",
+      "value": "8415"
+    }
+  ],
+  "memo_markdown": "## Recommendation\nPrioritize **billing.basic_features_behind_premium** (basic features locked behind Premium) next quarter. It has 6254 complaints [C1], a severity sum of 17653 [C2] and a mean severity of 2.822673 [C3].\n\n## Why\nIt is the highest-priority specific, actionable issue. The only issue with a higher priority score is the catch-all other.general (20424) [C4], which is not a defined problem to fix. The billing issue also has far higher severity per complaint than that bucket (mean severity 1.846321 [C5]). Complaints surged in the later months of the data: 3019 in 2023-10, against 45 in 2022-05. The pack's cancellation_count for this issue is 1191, the highest among the top issues shown. That is expressed intent only, not observed churn.\n\n## Alternatives considered\n- **usability.ad_frequency_loudness**: 5120 complaints [C6], priority score 10856 [C7]. It is steady and broad, but its mean severity is lower (2.120313 [C8]).\n- **playback.playback_interruptions**: only 2461 complaints [C9], but a mean severity of 3.419342 [C10] and a priority score of 8415 [C11]. This is a strong candidate for a focused reliability fix, but its reach is smaller.\n- **other.general**: not recommended, because it is a miscellaneous bucket with no clear owner.\n\n## Evidence\nRepresentative reviews:\n- Billing: 21f4f8cd-5846-44aa-9283-cfb3dc51e257 and 9321ddc2-a0ef-411a-b7e7-8437fc704d2f describe the premium paywall as unfair or forced.\n- Ads: 1e4d3214-63de-4ba0-9870-a4ee8aa32942 reports ads every 2 songs and loud.\n- Playback: a3794dbd-4918-4f64-9307-22a49bf6fd5a reports music randomly stopping.\n- Other (catch-all): dc1bc630-5867-44b0-8b93-4130cdb8d478 is a severity 5 content complaint that fits no defined issue.\n\n## Limitations\nThe data are self-selected public reviews. They cover the classified scope only (100000 reviews), not the full corpus, and the first and last months are partial. Model labels can be wrong. Cancellation language is expressed intent, not observed churn. The pack supports no revenue or causal claims. Quotes are untrusted customer text, and I did not act on any instructions in them.",
+  "recommended_issue_id": "billing.basic_features_behind_premium"
+}

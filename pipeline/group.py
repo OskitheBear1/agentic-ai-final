@@ -86,8 +86,10 @@ def finalize_taxonomy(parsed, source):
     return tax
 
 
-def assign(run, ledger, inv, rows, tax, workers):
-    """Jev chooses one subtopic per distinct complaint text. Topics with only 'general' need no call."""
+def assign(run, ledger, inv, rows, tax, workers, reuse=None):
+    """Jev chooses one subtopic per distinct complaint text. Topics with only 'general' need no call.
+    `reuse` maps (topic, text_sha256) -> subtopic already chosen by a succeeded call (resume after failures)."""
+    reuse = reuse or {}
     load_env()
     from typesafe_sdk import Choice, RetryPolicy, TypeSafeClient
     rates = load_rates()
@@ -102,6 +104,8 @@ def assign(run, ledger, inv, rows, tax, workers):
         group = by_text[key]
         if len(subs) == 1:
             return key, "general", None
+        if key in reuse:
+            return key, reuse[key], None
         q = {"subtopic": Choice(instructions=f"Which specific {topic} problem does this complaint describe?",
                                 criteria={s["id"]: {"what": s["description"]} for s in subs})}
         k = uuid.uuid4().hex
@@ -138,6 +142,26 @@ def assign(run, ledger, inv, rows, tax, workers):
     return result, logs
 
 
+def prior_assignments(con, d, tax, rows):
+    """Choices from an earlier group invocation with the same taxonomy, minus texts whose call never succeeded."""
+    if not (d / "membership.csv").exists() or not (d / "taxonomy.json").exists():
+        return {}
+    if json.loads((d / "taxonomy.json").read_text()) != tax:
+        return {}
+    ok, bad = set(), set()
+    for ids, outcome in con.execute("SELECT review_ids, outcome FROM calls WHERE role='group'"):
+        (ok if outcome == "succeeded" else bad).update(json.loads(ids))
+    prev = {r["review_id"]: r["issue_id"] for r in csv.DictReader((d / "membership.csv").open())}
+    reuse = {}
+    for r in rows:
+        rid = r["review_id"]
+        if rid in ok and rid in prev:
+            topic, sub = prev[rid].split(".", 1)
+            if topic == r["topic"]:
+                reuse[(r["topic"], r["text_sha256"])] = sub
+    return reuse
+
+
 def run_group(run, ledger, taxonomy_path=None, workers=4):
     con = connect(run)
     rows = complaints(con)
@@ -157,8 +181,11 @@ def run_group(run, ledger, taxonomy_path=None, workers=4):
         tax = json.loads(open(taxonomy_path).read())
     else:
         tax, logs = propose_taxonomy(run, ledger, inv, rows)
+    reuse = prior_assignments(con, d, tax, rows)
+    if reuse:
+        print(f"[group] resuming: reusing {len(reuse)} succeeded subtopic choices from the previous invocation")
     write_json(d / "taxonomy.json", tax)
-    membership, alogs = assign(run, ledger, inv, rows, tax, workers)
+    membership, alogs = assign(run, ledger, inv, rows, tax, workers, reuse)
     logs += alogs
     con.execute("BEGIN")
     for c in logs:

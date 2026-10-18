@@ -1,0 +1,15 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792359359.192457,
+  "export": "/Users/jbond/Code/agentic-ai/final-assignment/artifacts/full/grading",
+  "run": "full",
+  "spent_after_usd": 5.650944,
+  "spent_before_usd": 5.650944,
+  "spent_this_command_usd": 0.0,
+  "stage": "export",
+  "stage_seconds": {
+    "export": 10.84
+  },
+  "started_at": 1792359348.3265321,
+  "wall_clock_s": 10.841
+}

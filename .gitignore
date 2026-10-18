@@ -24,3 +24,4 @@ node_modules/
 # Mock/test runs and Office lock files
 artifacts/mock*/
 ~$*
+artifacts/*/grading/

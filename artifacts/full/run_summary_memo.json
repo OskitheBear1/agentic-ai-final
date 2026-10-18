@@ -1,0 +1,21 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792359348.178827,
+  "memo": {
+    "attempts": 1,
+    "cited_reviews": 5,
+    "claims": 11,
+    "recommended_issue_id": "billing.basic_features_behind_premium",
+    "wall_s": 11.93
+  },
+  "run": "full",
+  "spent_after_usd": 5.650944,
+  "spent_before_usd": 5.618923,
+  "spent_this_command_usd": 0.032021,
+  "stage": "memo",
+  "stage_seconds": {
+    "memo": 12.579
+  },
+  "started_at": 1792359335.565713,
+  "wall_clock_s": 12.585
+}
