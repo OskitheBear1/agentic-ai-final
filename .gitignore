@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Raw dataset (97 MB; see README for source + checksum)
+data/
+/Final Assignment - Spotify Reviews Dataset/
+*.pdf
+
+# Local state / scratch
+state/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.agent-handoff.md
+PROGRESS.md
+local-reference.json
+self-check.json
+.vercel/
+node_modules/
+
+# Mock/test runs and Office lock files
+artifacts/mock*/
+~$*

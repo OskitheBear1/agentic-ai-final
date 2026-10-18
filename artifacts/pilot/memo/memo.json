@@ -1,0 +1,94 @@
+{
+  "cited_reviews": [
+    {
+      "issue_id": "billing.premium_gated_basic_controls",
+      "review_id": "88439ec2-7c49-4c57-bedb-c5e098692aff"
+    },
+    {
+      "issue_id": "billing.premium_gated_basic_controls",
+      "review_id": "a3605554-5c3a-441d-836e-e9fdea83eb2e"
+    },
+    {
+      "issue_id": "usability.intrusive_ads",
+      "review_id": "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726"
+    },
+    {
+      "issue_id": "access.login_failure",
+      "review_id": "de0a9cdf-8974-48bc-802f-331228df4619"
+    },
+    {
+      "issue_id": "playback.crash_on_launch",
+      "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "billing.premium_gated_basic_controls",
+      "metric": "priority_score",
+      "value": "18"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "billing.premium_gated_basic_controls",
+      "metric": "complaint_count",
+      "value": "6"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "billing.premium_gated_basic_controls",
+      "metric": "mean_severity",
+      "value": "3.000000"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "billing.premium_gated_basic_controls",
+      "metric": "severity_sum",
+      "value": "18"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "usability.intrusive_ads",
+      "metric": "complaint_count",
+      "value": "6"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "usability.intrusive_ads",
+      "metric": "priority_score",
+      "value": "13"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "usability.intrusive_ads",
+      "metric": "mean_severity",
+      "value": "2.166667"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "access.login_failure",
+      "metric": "mean_severity",
+      "value": "4.000000"
+    },
+    {
+      "claim_id": "C10",
+      "issue_id": "access.login_failure",
+      "metric": "priority_score",
+      "value": "8"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "playback.crash_on_launch",
+      "metric": "priority_score",
+      "value": "8"
+    }
+  ],
+  "memo_markdown": "## Recommendation\nPrioritize **billing.premium_gated_basic_controls** (Premium-gated basic controls) next quarter. It has the top priority_score of 18 [C1], from 6 complaints [C2] with a mean severity of 3.000000 [C3].\n\n## Why\nIt ranks first on severity_sum (18) [C4] among the 25 ranked issues. Its complaints cluster in 2023-10 (3 of the 6), which suggests a recent update triggered them. The related issue usability.removed_basic_controls also appears only in 2023-10, and users describe the same pain: no skipping, going back, or repeating. Several reviews express intent to cancel or uninstall. That is stated intent, not observed churn.\n\n## Alternatives considered\n- **usability.intrusive_ads**: the same complaint count of 6 [C5] but a lower priority_score of 13 [C6] and a mean severity of 2.166667 [C7]. Complaints are spread evenly across months with no spike.\n- **access.login_failure**: only 2 complaints [C8], but a mean severity of 4.000000 [C9] and a priority_score of 8 [C10]. It is severe but small. It is a candidate for a targeted fix, not the main quarterly bet.\n- **playback.crash_on_launch**: also 2 complaints and a priority_score of 8 [C11]. It has the same profile as login failure.\n\n## Evidence\n- Gated controls: 88439ec2-7c49-4c57-bedb-c5e098692aff (cannot go back or skip) and a3605554-5c3a-441d-836e-e9fdea83eb2e (skip and previous removed for non-subscribers), both illustrating billing.premium_gated_basic_controls.\n- Ads: e5e6c55f-3069-4b7c-9807-f8b5d5bf2726 (too many ads), illustrating usability.intrusive_ads.\n- Login: de0a9cdf-8974-48bc-802f-331228df4619 (password rejected), illustrating access.login_failure.\n- Crash: 55cc3abf-c295-4591-8c3a-78085cfdefaa (app crashes after an update), illustrating playback.crash_on_launch.\n- Complaints and cancellations total 51 of 100 classified reviews.\n\n## Limitations\n- Reviews are public and self-selected.\n- The scope is the classified reviews only (100), not the full corpus, and the first and last months are partial.\n- Model labels can be wrong.\n- Cancellation language is expressed intent, not observed churn.\n- The pack supports no revenue or causal claims. The update link is a timing observation only.\n- Customer quotes were treated as untrusted text.",
+  "recommended_issue_id": "billing.premium_gated_basic_controls"
+}

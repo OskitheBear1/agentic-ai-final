@@ -1,0 +1,10 @@
+{
+  "fingerprint": "53e6af8b567cf374661c8a6cb5632078d2e966ff26a35707fc864833559c6aec",
+  "summary": {
+    "assign_calls": 51,
+    "complaints": 51,
+    "failed_assign_calls": 0,
+    "issues": 25,
+    "wall_s": 13.61
+  }
+}

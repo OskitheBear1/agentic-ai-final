@@ -1,0 +1,121 @@
+{
+  "budget_usd": 12.0,
+  "ended_at": 1792352746.745652,
+  "enrich": [
+    "finished",
+    {
+      "batches": 0,
+      "cache_hits": 0,
+      "completed": 0,
+      "label_config": "jev-1.13.0+jev-q1+schema-v1+quote-v1",
+      "phase": "resume",
+      "quarantined": 0,
+      "wall_s": 0.0,
+      "workers": 1
+    }
+  ],
+  "export": "/Users/jbond/Code/agentic-ai/final-assignment/artifacts/pilot/grading",
+  "group": {
+    "assign_calls": 51,
+    "cache_hit": true,
+    "complaints": 51,
+    "failed_assign_calls": 0,
+    "issues": 25,
+    "wall_s": 13.61
+  },
+  "ingest": {
+    "pending": 100
+  },
+  "memo": {
+    "attempts": 1,
+    "cache_hit": true,
+    "cited_reviews": 5,
+    "claims": 11,
+    "recommended_issue_id": "billing.premium_gated_basic_controls",
+    "wall_s": 12.24
+  },
+  "rank": {
+    "issues": 25,
+    "top": [
+      {
+        "complaint_count": 6,
+        "issue_id": "billing.premium_gated_basic_controls",
+        "mean_severity": "3.000000",
+        "priority_score": 18,
+        "rank": 1,
+        "severity_sum": 18
+      },
+      {
+        "complaint_count": 6,
+        "issue_id": "usability.intrusive_ads",
+        "mean_severity": "2.166667",
+        "priority_score": 13,
+        "rank": 2,
+        "severity_sum": 13
+      },
+      {
+        "complaint_count": 5,
+        "issue_id": "other.general_dissatisfaction_with_update",
+        "mean_severity": "2.400000",
+        "priority_score": 12,
+        "rank": 3,
+        "severity_sum": 12
+      }
+    ]
+  },
+  "run": "pilot",
+  "spent_after_usd": 0.037199,
+  "spent_before_usd": 0.037199,
+  "spent_this_command_usd": 0.0,
+  "stage": "all",
+  "stage_seconds": {
+    "enrich": 0.165,
+    "export": 0.004,
+    "group": 0.001,
+    "ingest": 0.004,
+    "memo": 0.001,
+    "rank": 0.002,
+    "verify": 0.001
+  },
+  "started_at": 1792352746.552383,
+  "verify": {
+    "agreement": {
+      "intent": 0.9,
+      "sentiment": 0.95,
+      "severity": 0.8,
+      "severity_within_1": 1.0,
+      "topic": 0.95
+    },
+    "cache_hit": true,
+    "declared_sample_size": 20,
+    "intent_confusion_enricher_vs_verifier": [
+      [
+        "praise->complaint",
+        1
+      ],
+      [
+        "unclear->praise",
+        1
+      ]
+    ],
+    "needs_review_flag_vs_disagreement": {
+      "flagged": 1,
+      "flagged_and_disagree": 1,
+      "unflagged_and_disagree": 2
+    },
+    "prompt_version": "verify-v1",
+    "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+    "sampled": 20,
+    "topic_confusion_enricher_vs_verifier": [
+      [
+        "other->usability",
+        1
+      ]
+    ],
+    "verified": 20,
+    "verifier_failed": 0,
+    "verifier_model": "claude-haiku-5-5",
+    "wall_s": 4.33
+  },
+  "wall_clock_s": 0.193
+}

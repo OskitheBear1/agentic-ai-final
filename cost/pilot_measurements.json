@@ -1,0 +1,55 @@
+{
+  "pilot_run": "pilot",
+  "input_file": "cost_100.csv",
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "rows": 100,
+  "distinct_texts": 100,
+  "cold": {
+    "started_at": 1792352698.1928809,
+    "wall_clock_s": 41.504,
+    "stage_seconds": {
+      "ingest": 0.004,
+      "enrich": 11.258,
+      "verify": 4.339,
+      "group": 13.616,
+      "rank": 0.01,
+      "memo": 12.243,
+      "export": 0.012
+    },
+    "spent_this_command_usd": 0.037199
+  },
+  "warm": {
+    "started_at": 1792352746.552383,
+    "wall_clock_s": 0.193,
+    "stage_seconds": {
+      "ingest": 0.004,
+      "enrich": 0.165,
+      "verify": 0.001,
+      "group": 0.001,
+      "rank": 0.002,
+      "memo": 0.001,
+      "export": 0.004
+    },
+    "spent_this_command_usd": 0.0
+  },
+  "settings": {
+    "workers": 1,
+    "enrich_batch_size": 50,
+    "reviews_per_enrich_request": 1,
+    "verify_sample": 20,
+    "verify_reviews_per_request": 25,
+    "models": {
+      "enrich": "jev-latest (served jev-1.13.0), no thinking control (fixed-choice model)",
+      "verify": "claude-haiku-5-5, thinking disabled, effort low, structured output",
+      "group": "claude-haiku-5-5 taxonomy (thinking disabled) + jev-latest subtopic choice",
+      "memo": "claude-sonnet-5-5, adaptive thinking, effort low, structured output"
+    },
+    "prompt_versions": {
+      "enrich": "jev-q1+schema-v1+quote-v1",
+      "verify": "verify-v1",
+      "group": "group-v1",
+      "memo": "memo-v1"
+    }
+  },
+  "machine": "Apple M2 Pro, 16 GB RAM, macOS (local orchestration; no local inference)"
+}

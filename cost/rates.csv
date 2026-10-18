@@ -1,0 +1,11 @@
+provider,model,billing_item,unit,usd_per_million_units,source_url,checked_date,status,note
+typesafe,jev,input_tokens,token,0.042,https://www.layer3labs.io/guides/jev-pricing,2026-10-18,third_party_reported,"Third-party reported rate, used as a conservative ceiling. Reconciliation 2026-10-18: TypeSafe dashboard showed $0.0001 total after the pilot (~142k input tokens logged), far below this rate's $0.006; dashboard may lag or the true rate is lower."
+typesafe,jev,output_tokens,token,0.0,https://www.layer3labs.io/guides/jev-pricing,2026-10-18,third_party_reported,Reported as free (Jev returns no generated prose); reconcile against TypeSafe dashboard
+anthropic,claude-haiku-5-5,input_tokens,token,0.10,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official,"Standard tier, prompts <=100K tokens"
+anthropic,claude-haiku-5-5,cache_read_input_tokens,token,0.01,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official_assumed_10pct,Cache reads assumed 10% of input rate
+anthropic,claude-haiku-5-5,cache_creation_input_tokens,token,0.125,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official_assumed_125pct,5-minute cache write assumed 1.25x input rate
+anthropic,claude-haiku-5-5,output_tokens,token,0.50,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official,Standard tier
+anthropic,claude-sonnet-5-5,input_tokens,token,2.00,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official,Standard tier
+anthropic,claude-sonnet-5-5,cache_read_input_tokens,token,0.20,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official,Cache reads
+anthropic,claude-sonnet-5-5,cache_creation_input_tokens,token,2.50,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official_assumed_125pct,5-minute cache write assumed 1.25x input rate
+anthropic,claude-sonnet-5-5,output_tokens,token,10.00,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-18,official,Standard tier

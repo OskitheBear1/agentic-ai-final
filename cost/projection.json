@@ -1,0 +1,61 @@
+{
+  "cold_api_usd": 0.03719893,
+  "warm_api_usd": 0,
+  "warm_enrich_calls": 0,
+  "cold_wall_s": 41.504,
+  "warm_wall_s": 0.193,
+  "scenarios": [
+    {
+      "scenario": "base (exact-text reuse)",
+      "distinct_texts_sent": 78099,
+      "enrich_calls": 79270,
+      "enrich_usd": 3.9082,
+      "fallback_usd": 0.0,
+      "verify_usd": 0.0391,
+      "group_usd": 0.8104,
+      "memo_usd": 0.031,
+      "api_total_usd": 4.7887,
+      "est_hours": 1.6875,
+      "over_budget": false
+    },
+    {
+      "scenario": "conservative (reuse)",
+      "distinct_texts_sent": 78099,
+      "enrich_calls": 83566,
+      "enrich_usd": 4.12,
+      "fallback_usd": 0.1562,
+      "verify_usd": 0.0407,
+      "group_usd": 0.8424,
+      "memo_usd": 0.0354,
+      "api_total_usd": 5.1947,
+      "est_hours": 1.7472,
+      "over_budget": false
+    },
+    {
+      "scenario": "base, no reuse",
+      "distinct_texts_sent": 100000,
+      "enrich_calls": 101500,
+      "enrich_usd": 5.0042,
+      "fallback_usd": 0.0,
+      "verify_usd": 0.0391,
+      "group_usd": 1.0373,
+      "memo_usd": 0.031,
+      "api_total_usd": 6.1117,
+      "est_hours": 2.1514,
+      "over_budget": false
+    },
+    {
+      "scenario": "reference: full corpus 660,609, reuse (484,189 texts)",
+      "distinct_texts_sent": 484189,
+      "enrich_calls": 491452,
+      "enrich_usd": 24.2298,
+      "fallback_usd": 0.0,
+      "verify_usd": 0.0391,
+      "group_usd": 5.0189,
+      "memo_usd": 0.031,
+      "api_total_usd": 29.3189,
+      "est_hours": 10.2887,
+      "over_budget": true
+    }
+  ]
+}

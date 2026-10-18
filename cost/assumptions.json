@@ -1,0 +1,28 @@
+{
+  "projection": {
+    "classified_rows": 100000,
+    "distinct_texts_by_scope": {"100000": 78099, "660609": 484189},
+    "distinct_ratio_default": 0.781,
+    "verify_sample": 1000,
+    "base_retry_rate": 0.01,
+    "base_invalid_rate": 0.005,
+    "base_fallback_fraction": 0.0,
+    "cons_retry_rate": 0.05,
+    "cons_invalid_rate": 0.02,
+    "cons_fallback_fraction": 0.02,
+    "fallback_input_tokens": 600,
+    "fallback_output_tokens": 80,
+    "fixed_overhead_s": 120
+  },
+  "controls": {
+    "budget_usd": 12.0,
+    "max_workers": 4,
+    "rps_cap": 20,
+    "output_token_cap_verify_per_review": 60,
+    "output_token_cap_memo": 4000,
+    "max_fallback_fraction": 0.02,
+    "invalid_output_retries": 1,
+    "transient_api_retries": 2
+  },
+  "decision": "Scope fixed at 100,000 classified rows (course minimum). Jev enrichment with exact-text reuse; 1 worker for the pilot, chosen concurrency set after measuring 2-4 workers on the 500/10k dev runs. The ledger hard-stops new calls at the budget cap."
+}

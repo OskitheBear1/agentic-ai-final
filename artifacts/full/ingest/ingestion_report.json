@@ -1,0 +1,26 @@
+{
+  "accounting_check": true,
+  "distinct_nonempty_texts_full_file": 484189,
+  "duplicate_review_ids": 0,
+  "empty_review_text": 13,
+  "input_bytes": 97400616,
+  "input_file": "spotify_reviews_18months.csv",
+  "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "missing_app_version": 159701,
+  "model_calls": 0,
+  "nonempty_rows": 660609,
+  "rows": 660622,
+  "scope": {
+    "declared_scope": 100000,
+    "distinct_texts_in_scope": 78099,
+    "exact_duplicate_rows_in_scope": 21901,
+    "method": "Lowest SHA-256('berkeley-fall-2026-assignment-5-v1:' + review_id) among unique, nonempty, valid-rating rows (the course's own sampling order), so the golden 50 and all dev checkpoints are included.",
+    "selected": 100000
+  },
+  "status_counts": {
+    "empty_review_text": 13,
+    "outside_declared_classification_scope": 560609,
+    "pending": 100000
+  },
+  "unique_review_ids": 660622
+}

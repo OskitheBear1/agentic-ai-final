@@ -1,0 +1,177 @@
+{
+  "source": "proposed by claude-haiku-5-5 (group-v1) from run pilot",
+  "topics": {
+    "access": [
+      {
+        "description": "User cannot sign in because the app rejects their password or does not let them into their account.",
+        "id": "login_failure",
+        "name": "Login failure"
+      },
+      {
+        "description": "Users say too many ads prevent them from getting into or using the app.",
+        "id": "ads_blocking_entry",
+        "name": "Ads blocking entry"
+      },
+      {
+        "description": "access complaints not covered above",
+        "id": "general",
+        "name": "Other access complaints"
+      }
+    ],
+    "billing": [
+      {
+        "description": "Users say basic actions such as choosing, skipping, or replaying specific songs now require Premium.",
+        "id": "premium_gated_basic_controls",
+        "name": "Premium-gated basic controls"
+      },
+      {
+        "description": "Free users say they can only skip a limited number of songs, such as six.",
+        "id": "skip_limit",
+        "name": "Skip limit"
+      },
+      {
+        "description": "Free users say they cannot add songs to the queue or play the next chosen track.",
+        "id": "queue_restriction",
+        "name": "Queue restriction"
+      },
+      {
+        "description": "billing complaints not covered above",
+        "id": "general",
+        "name": "Other billing complaints"
+      }
+    ],
+    "catalog": [
+      {
+        "description": "Users report that many songs they want are not available on the platform.",
+        "id": "missing_songs",
+        "name": "Missing songs"
+      },
+      {
+        "description": "Lyrics are inconsistently available, sometimes missing for songs.",
+        "id": "lyrics_availability",
+        "name": "Lyrics availability"
+      },
+      {
+        "description": "Users say recommendations have worsened, with fewer songs or less recent music.",
+        "id": "recommendation_quality",
+        "name": "Recommendation quality"
+      },
+      {
+        "description": "Users say certain genres, such as gospel music, are underrepresented.",
+        "id": "genre_coverage",
+        "name": "Genre coverage"
+      },
+      {
+        "description": "catalog complaints not covered above",
+        "id": "general",
+        "name": "Other catalog complaints"
+      }
+    ],
+    "downloads": [
+      {
+        "description": "Song downloads get stuck in the background until the app is reopened.",
+        "id": "background_download_stuck",
+        "name": "Background download stuck"
+      },
+      {
+        "description": "Offline listening does not work for the user.",
+        "id": "offline_mode_broken",
+        "name": "Offline mode broken"
+      },
+      {
+        "description": "downloads complaints not covered above",
+        "id": "general",
+        "name": "Other downloads complaints"
+      }
+    ],
+    "other": [
+      {
+        "description": "Users express broad disappointment with a recent update without specifying a concrete issue.",
+        "id": "general_dissatisfaction_with_update",
+        "name": "General dissatisfaction with update"
+      },
+      {
+        "description": "Users object to the app's content or the company's stance on certain religious, political, or social matters and say they will boycott or uninstall.",
+        "id": "content_policy_objection",
+        "name": "Content policy objection"
+      },
+      {
+        "description": "Reviews consisting mainly of insults or profanity with no specific product feedback.",
+        "id": "abusive_language",
+        "name": "Abusive language"
+      },
+      {
+        "description": "other complaints not covered above",
+        "id": "general",
+        "name": "Other other complaints"
+      }
+    ],
+    "playback": [
+      {
+        "description": "Google Assistant reports playing a Spotify playlist but no songs actually play.",
+        "id": "voice_assistant_no_playback",
+        "name": "Voice assistant no playback"
+      },
+      {
+        "description": "The app crashes or gets stuck on the loading or logo screen and cannot be opened.",
+        "id": "crash_on_launch",
+        "name": "Crash on launch"
+      },
+      {
+        "description": "Playback fails on Wi-Fi while working on mobile data, and some songs have poor audio quality.",
+        "id": "network_connectivity_failure",
+        "name": "Network connectivity failure"
+      },
+      {
+        "description": "Music stops partway through a track and does not resume where it left off, starting a different song instead.",
+        "id": "playback_stops_midway",
+        "name": "Playback stops midway"
+      },
+      {
+        "description": "playback complaints not covered above",
+        "id": "general",
+        "name": "Other playback complaints"
+      }
+    ],
+    "support": [
+      {
+        "description": "support complaints not covered above",
+        "id": "general",
+        "name": "Other support complaints"
+      }
+    ],
+    "usability": [
+      {
+        "description": "Users complain that ads are too frequent, too loud, or appear everywhere, degrading the listening experience.",
+        "id": "intrusive_ads",
+        "name": "Intrusive ads"
+      },
+      {
+        "description": "Users say basic player features such as going back, repeating, or playing specific parts were removed or broken.",
+        "id": "removed_basic_controls",
+        "name": "Removed basic controls"
+      },
+      {
+        "description": "Users dislike the new homescreen layout and scrolling format that shows one playlist, album, or artist at a time.",
+        "id": "homescreen_redesign",
+        "name": "Homescreen redesign"
+      },
+      {
+        "description": "Users say major interface updates are rolled out without beta testing or notice.",
+        "id": "unannounced_ux_changes",
+        "name": "Unannounced UX changes"
+      },
+      {
+        "description": "Users say playlists play songs randomly, disrupting their intended listening order.",
+        "id": "shuffle_playlist_behavior",
+        "name": "Shuffle playlist behavior"
+      },
+      {
+        "description": "usability complaints not covered above",
+        "id": "general",
+        "name": "Other usability complaints"
+      }
+    ]
+  },
+  "version": "group-v1"
+}

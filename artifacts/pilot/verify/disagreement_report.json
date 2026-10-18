@@ -1,0 +1,38 @@
+{
+  "agreement": {
+    "intent": 0.9,
+    "sentiment": 0.95,
+    "severity": 0.8,
+    "severity_within_1": 1.0,
+    "topic": 0.95
+  },
+  "declared_sample_size": 20,
+  "intent_confusion_enricher_vs_verifier": [
+    [
+      "praise->complaint",
+      1
+    ],
+    [
+      "unclear->praise",
+      1
+    ]
+  ],
+  "needs_review_flag_vs_disagreement": {
+    "flagged": 1,
+    "flagged_and_disagree": 1,
+    "unflagged_and_disagree": 2
+  },
+  "prompt_version": "verify-v1",
+  "sample_method": "lowest SHA-256('verify-v1:'+review_id) among completed non-cached records",
+  "sampled": 20,
+  "topic_confusion_enricher_vs_verifier": [
+    [
+      "other->usability",
+      1
+    ]
+  ],
+  "verified": 20,
+  "verifier_failed": 0,
+  "verifier_model": "claude-haiku-5-5",
+  "wall_s": 4.33
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "description": "User cannot sign in because the app rejects their password or does not let them into their account.",
+    "issue_id": "access.login_failure",
+    "member_count": 2,
+    "name": "Login failure"
+  },
+  {
+    "description": "billing complaints not covered above",
+    "issue_id": "billing.general",
+    "member_count": 1,
+    "name": "Other billing complaints"
+  },
+  {
+    "description": "Users say basic actions such as choosing, skipping, or replaying specific songs now require Premium.",
+    "issue_id": "billing.premium_gated_basic_controls",
+    "member_count": 6,
+    "name": "Premium-gated basic controls"
+  },
+  {
+    "description": "Free users say they can only skip a limited number of songs, such as six.",
+    "issue_id": "billing.skip_limit",
+    "member_count": 1,
+    "name": "Skip limit"
+  },
+  {
+    "description": "catalog complaints not covered above",
+    "issue_id": "catalog.general",
+    "member_count": 1,
+    "name": "Other catalog complaints"
+  },
+  {
+    "description": "Users say certain genres, such as gospel music, are underrepresented.",
+    "issue_id": "catalog.genre_coverage",
+    "member_count": 1,
+    "name": "Genre coverage"
+  },
+  {
+    "description": "Lyrics are inconsistently available, sometimes missing for songs.",
+    "issue_id": "catalog.lyrics_availability",
+    "member_count": 2,
+    "name": "Lyrics availability"
+  },
+  {
+    "description": "Users report that many songs they want are not available on the platform.",
+    "issue_id": "catalog.missing_songs",
+    "member_count": 1,
+    "name": "Missing songs"
+  },
+  {
+    "description": "Users say recommendations have worsened, with fewer songs or less recent music.",
+    "issue_id": "catalog.recommendation_quality",
+    "member_count": 2,
+    "name": "Recommendation quality"
+  },
+  {
+    "description": "Song downloads get stuck in the background until the app is reopened.",
+    "issue_id": "downloads.background_download_stuck",
+    "member_count": 1,
+    "name": "Background download stuck"
+  },
+  {
+    "description": "Offline listening does not work for the user.",
+    "issue_id": "downloads.offline_mode_broken",
+    "member_count": 1,
+    "name": "Offline mode broken"
+  },
+  {
+    "description": "Reviews consisting mainly of insults or profanity with no specific product feedback.",
+    "issue_id": "other.abusive_language",
+    "member_count": 2,
+    "name": "Abusive language"
+  },
+  {
+    "description": "Users object to the app's content or the company's stance on certain religious, political, or social matters and say they will boycott or uninstall.",
+    "issue_id": "other.content_policy_objection",
+    "member_count": 2,
+    "name": "Content policy objection"
+  },
+  {
+    "description": "other complaints not covered above",
+    "issue_id": "other.general",
+    "member_count": 5,
+    "name": "Other other complaints"
+  },
+  {
+    "description": "Users express broad disappointment with a recent update without specifying a concrete issue.",
+    "issue_id": "other.general_dissatisfaction_with_update",
+    "member_count": 5,
+    "name": "General dissatisfaction with update"
+  },
+  {
+    "description": "The app crashes or gets stuck on the loading or logo screen and cannot be opened.",
+    "issue_id": "playback.crash_on_launch",
+    "member_count": 2,
+    "name": "Crash on launch"
+  },
+  {
+    "description": "Playback fails on Wi-Fi while working on mobile data, and some songs have poor audio quality.",
+    "issue_id": "playback.network_connectivity_failure",
+    "member_count": 1,
+    "name": "Network connectivity failure"
+  },
+  {
+    "description": "Music stops partway through a track and does not resume where it left off, starting a different song instead.",
+    "issue_id": "playback.playback_stops_midway",
+    "member_count": 1,
+    "name": "Playback stops midway"
+  },
+  {
+    "description": "Google Assistant reports playing a Spotify playlist but no songs actually play.",
+    "issue_id": "playback.voice_assistant_no_playback",
+    "member_count": 1,
+    "name": "Voice assistant no playback"
+  },
+  {
+    "description": "usability complaints not covered above",
+    "issue_id": "usability.general",
+    "member_count": 1,
+    "name": "Other usability complaints"
+  },
+  {
+    "description": "Users dislike the new homescreen layout and scrolling format that shows one playlist, album, or artist at a time.",
+    "issue_id": "usability.homescreen_redesign",
+    "member_count": 1,
+    "name": "Homescreen redesign"
+  },
+  {
+    "description": "Users complain that ads are too frequent, too loud, or appear everywhere, degrading the listening experience.",
+    "issue_id": "usability.intrusive_ads",
+    "member_count": 6,
+    "name": "Intrusive ads"
+  },
+  {
+    "description": "Users say basic player features such as going back, repeating, or playing specific parts were removed or broken.",
+    "issue_id": "usability.removed_basic_controls",
+    "member_count": 3,
+    "name": "Removed basic controls"
+  },
+  {
+    "description": "Users say playlists play songs randomly, disrupting their intended listening order.",
+    "issue_id": "usability.shuffle_playlist_behavior",
+    "member_count": 1,
+    "name": "Shuffle playlist behavior"
+  },
+  {
+    "description": "Users say major interface updates are rolled out without beta testing or notice.",
+    "issue_id": "usability.unannounced_ux_changes",
+    "member_count": 1,
+    "name": "Unannounced UX changes"
+  }
+]

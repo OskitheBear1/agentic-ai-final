@@ -1,0 +1,12 @@
+claim_id,issue_id,metric,value
+C1,billing.premium_gated_basic_controls,priority_score,18
+C2,billing.premium_gated_basic_controls,complaint_count,6
+C3,billing.premium_gated_basic_controls,mean_severity,3.000000
+C4,billing.premium_gated_basic_controls,severity_sum,18
+C5,usability.intrusive_ads,complaint_count,6
+C6,usability.intrusive_ads,priority_score,13
+C7,usability.intrusive_ads,mean_severity,2.166667
+C8,access.login_failure,complaint_count,2
+C9,access.login_failure,mean_severity,4.000000
+C10,access.login_failure,priority_score,8
+C11,playback.crash_on_launch,priority_score,8

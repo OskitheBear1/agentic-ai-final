@@ -1,0 +1,12 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 100,
+  "analysis_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "declared_classification_scope": 100,
+  "input_file": "cost_100.csv",
+  "run_name": "pilot",
+  "version": "a5-audit-v1"
+}

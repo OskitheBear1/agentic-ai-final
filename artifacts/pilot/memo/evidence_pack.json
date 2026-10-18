@@ -1,0 +1,344 @@
+{
+  "issues_ranked_total": 25,
+  "scope_note": "Classified scope only; first and last calendar months are partial.",
+  "top_issues": [
+    {
+      "cancellation_count": "1",
+      "complaint_count": "6",
+      "complaints_by_month": {
+        "2022-10": 1,
+        "2023-04": 1,
+        "2023-05": 1,
+        "2023-10": 3
+      },
+      "description": "Users say basic actions such as choosing, skipping, or replaying specific songs now require Premium.",
+      "issue_id": "billing.premium_gated_basic_controls",
+      "mean_severity": "3.000000",
+      "name": "Premium-gated basic controls",
+      "priority_score": "18",
+      "rank": "1",
+      "representative_quotes": [
+        {
+          "intent": "cancellation",
+          "quote": "what's the point if we dont get to go back to the same song or skip songs..",
+          "review_id": "88439ec2-7c49-4c57-bedb-c5e098692aff",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "What kind of stupidity is this? Na queue m lgte h gaane, na skip kr skte h, na random chla skte h, kya bkchodi h ye??? Jaruri h premium lena? Nhi lena bhai thodi to sharam kro saare paise tumhi kma loge kya💀💀 alag hi pagapan h",
+          "review_id": "89ea2c30-db8b-459d-8ab7-bbcb7f92c774",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "Recent update really sucks. The ability to skip a song or go to previous song has been removed from non subscribed users.",
+          "review_id": "a3605554-5c3a-441d-836e-e9fdea83eb2e",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "This was fine till the last update, now you can't even pick a certain song without Spotify premium, and now you can only skip 6 songs, like please just let the songs fit my mood!",
+          "review_id": "d146397f-4a94-4980-be00-ae9212eca3a7",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "18",
+      "share_of_complaints": "0.1176",
+      "share_of_complaints_pct": "11.8%"
+    },
+    {
+      "cancellation_count": "1",
+      "complaint_count": "6",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2022-09": 1,
+        "2022-11": 1,
+        "2023-02": 1,
+        "2023-09": 1,
+        "2023-11": 1
+      },
+      "description": "Users complain that ads are too frequent, too loud, or appear everywhere, degrading the listening experience.",
+      "issue_id": "usability.intrusive_ads",
+      "mean_severity": "2.166667",
+      "name": "Intrusive ads",
+      "priority_score": "13",
+      "rank": "2",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Too many ads.... it's literally useless if u hv not taken premium",
+          "review_id": "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "The ads are so loud :'(",
+          "review_id": "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "DON'T DOWNLOAD THIS:Such a worst app ... that always plays adds instead of songs ...if want to enjoy music free without adds don't download this app ..",
+          "review_id": "cf6166ae-d71a-4839-9add-088645ad3b78",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Soo trash wayy to many ads I don't want premium but too much ads",
+          "review_id": "c2738a4f-e57c-46bc-a4ad-8ec5a4b5d5cd",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "13",
+      "share_of_complaints": "0.1176",
+      "share_of_complaints_pct": "11.8%"
+    },
+    {
+      "cancellation_count": "2",
+      "complaint_count": "5",
+      "complaints_by_month": {
+        "2023-01": 1,
+        "2023-07": 1,
+        "2023-09": 1,
+        "2023-10": 2
+      },
+      "description": "Users express broad disappointment with a recent update without specifying a concrete issue.",
+      "issue_id": "other.general_dissatisfaction_with_update",
+      "mean_severity": "2.400000",
+      "name": "General dissatisfaction with update",
+      "priority_score": "12",
+      "rank": "3",
+      "representative_quotes": [
+        {
+          "intent": "cancellation",
+          "quote": "The update made the app useless .... Uninstall krdia ye app ab bekar hai ... Wynk hi theek h",
+          "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Recent update 👎",
+          "review_id": "ca16e65d-d2ff-4453-a495-b8c422809330",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "It was a good app . But now it's a trash 🗑️",
+          "review_id": "c1ab120a-f91f-4ee3-87f5-66f352e2d47f",
+          "severity": 2
+        },
+        {
+          "intent": "cancellation",
+          "quote": "Used to love the app but recent update is very disappointing bye Spotify",
+          "review_id": "b47c203f-366e-4409-922d-cd52aa8bbef6",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "1",
+      "severity_sum": "12",
+      "share_of_complaints": "0.0980",
+      "share_of_complaints_pct": "9.8%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "5",
+      "complaints_by_month": {
+        "2023-06": 1,
+        "2023-07": 1,
+        "2023-10": 2,
+        "2023-11": 1
+      },
+      "description": "other complaints not covered above",
+      "issue_id": "other.general",
+      "mean_severity": "2.000000",
+      "name": "Other other complaints",
+      "priority_score": "10",
+      "rank": "4",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "Worst app",
+          "review_id": "06a45bd5-3ed9-43af-b7f2-8b9487e2ffff",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Aakhir kar spotify ne bhi apni bhikaariyo vali aukaat dikha di \"Gadar karbe\" Chanda mangna got real Bhikaariyo ko training dena bhi shuru kardo haramiyo",
+          "review_id": "3e82cf28-6b0a-4980-902c-b6aa154d353a",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Very bad app",
+          "review_id": "8b6e028a-5f63-4011-9841-cbbade4830eb",
+          "severity": 2
+        },
+        {
+          "intent": "complaint",
+          "quote": "Worst app.",
+          "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+          "severity": 2
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "10",
+      "share_of_complaints": "0.0980",
+      "share_of_complaints_pct": "9.8%"
+    },
+    {
+      "cancellation_count": "2",
+      "complaint_count": "3",
+      "complaints_by_month": {
+        "2023-10": 3
+      },
+      "description": "Users say basic player features such as going back, repeating, or playing specific parts were removed or broken.",
+      "issue_id": "usability.removed_basic_controls",
+      "mean_severity": "3.000000",
+      "name": "Removed basic controls",
+      "priority_score": "9",
+      "rank": "5",
+      "representative_quotes": [
+        {
+          "intent": "cancellation",
+          "quote": "Am very sad about the new spotfy update. i can't play song happly . Can't repeat and play specific part.please solve this matter. I'm leaving spotfy",
+          "review_id": "e16a4550-43e7-4ae1-b538-a65cc652c31b",
+          "severity": 3
+        },
+        {
+          "intent": "cancellation",
+          "quote": "Doesn't deserve even one star. Like what's the problem? We can't even go back few second to play music? WHAT IN THE WORLD IS THIS UPDATE? YOU PEOPLE NEED MORE MONEY?! gonna delete the app if they don't fix this",
+          "review_id": "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "I am using Spotify from past two years From last update they removed basic features of music player",
+          "review_id": "7084ced1-0428-4093-9328-442f74719b4f",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "9",
+      "share_of_complaints": "0.0588",
+      "share_of_complaints_pct": "5.9%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "2",
+      "complaints_by_month": {
+        "2023-01": 1,
+        "2023-08": 1
+      },
+      "description": "User cannot sign in because the app rejects their password or does not let them into their account.",
+      "issue_id": "access.login_failure",
+      "mean_severity": "4.000000",
+      "name": "Login failure",
+      "priority_score": "8",
+      "rank": "6",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "It not letting me into my account and there are to many ads",
+          "review_id": "32fb340f-4f9f-4551-8dae-755221e58d6a",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "Will not except my password",
+          "review_id": "de0a9cdf-8974-48bc-802f-331228df4619",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "2",
+      "severity_sum": "8",
+      "share_of_complaints": "0.0392",
+      "share_of_complaints_pct": "3.9%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "2",
+      "complaints_by_month": {
+        "2022-07": 1,
+        "2023-01": 1
+      },
+      "description": "The app crashes or gets stuck on the loading or logo screen and cannot be opened.",
+      "issue_id": "playback.crash_on_launch",
+      "mean_severity": "4.000000",
+      "name": "Crash on launch",
+      "priority_score": "8",
+      "rank": "7",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "The latest update has caused my app to crash I cant open the app please fix.",
+          "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa",
+          "severity": 4
+        },
+        {
+          "intent": "complaint",
+          "quote": "App is stuck on loading/logo screen",
+          "review_id": "66a29b3c-c14d-440e-b722-b23e0c99ae82",
+          "severity": 4
+        }
+      ],
+      "severity_4plus_count": "2",
+      "severity_sum": "8",
+      "share_of_complaints": "0.0392",
+      "share_of_complaints_pct": "3.9%"
+    },
+    {
+      "cancellation_count": "0",
+      "complaint_count": "2",
+      "complaints_by_month": {
+        "2023-10": 2
+      },
+      "description": "Lyrics are inconsistently available, sometimes missing for songs.",
+      "issue_id": "catalog.lyrics_availability",
+      "mean_severity": "3.000000",
+      "name": "Lyrics availability",
+      "priority_score": "6",
+      "rank": "8",
+      "representative_quotes": [
+        {
+          "intent": "complaint",
+          "quote": "sometime the lyrics don't show",
+          "review_id": "e0127547-4edd-44a0-8d5e-e8398bc07086",
+          "severity": 3
+        },
+        {
+          "intent": "complaint",
+          "quote": "It is good but there is a problem that in some songs there is no lyrics and in some songs there is lyrics it's so confusing. However it is good 😊😊.",
+          "review_id": "47becad0-8ae5-4a10-9731-fde8f2091862",
+          "severity": 3
+        }
+      ],
+      "severity_4plus_count": "0",
+      "severity_sum": "6",
+      "share_of_complaints": "0.0392",
+      "share_of_complaints_pct": "3.9%"
+    }
+  ],
+  "totals": {
+    "by_intent": {
+      "cancellation": 10,
+      "complaint": 41,
+      "praise": 39,
+      "request": 4,
+      "unclear": 6
+    },
+    "by_topic": {
+      "access": 2,
+      "billing": 8,
+      "catalog": 11,
+      "downloads": 3,
+      "other": 57,
+      "playback": 5,
+      "usability": 14
+    },
+    "classified_reviews": 100,
+    "complaint_or_cancellation_reviews": 51
+  }
+}
