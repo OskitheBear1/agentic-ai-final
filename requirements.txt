@@ -1,0 +1,10 @@
+# Paid pipeline stages (python -m pipeline.run ... --paid). Offline checks need only the standard library.
+typesafe-sdk==0.7.5
+anthropic==1.15.0
+python-dotenv==1.2.4
+# Golden-set spreadsheet import/export
+openpyxl==3.1.5
+# Database loader (pipeline.export_db) and local dashboard API
+pg8000==1.31.2
+fastapi==0.115.6
+uvicorn==0.54.0
