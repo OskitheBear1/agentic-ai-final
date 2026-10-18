@@ -1,0 +1,10 @@
+{
+  "test": "planted_errors false-flag baseline",
+  "source": "evals/results/planted.json (same 30 dev500 records)",
+  "method": "Compare the Haiku verifier's labels with each record's ORIGINAL (unplanted) enricher labels on topic, intent and severity.",
+  "records": 30,
+  "verifier_disagrees_with_original": 9,
+  "false_flag_rate": 0.30,
+  "by_field": {"topic": 5, "severity": 4, "intent": 1},
+  "interpretation": "The verifier caught all 15 planted semantic errors, but it also disagrees with 30% of unplanted records, so a verifier flag means 'look at this', not 'this is wrong'. Code checks (quote, label, range) have no false flags on these 30."
+}

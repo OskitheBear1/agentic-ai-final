@@ -1,21 +1,21 @@
 {
   "budget_usd": 12.0,
-  "ended_at": 1792359348.178827,
+  "ended_at": 1792363514.736989,
   "memo": {
-    "attempts": 1,
+    "attempts": 2,
     "cited_reviews": 5,
-    "claims": 11,
+    "claims": 15,
     "recommended_issue_id": "billing.basic_features_behind_premium",
-    "wall_s": 11.93
+    "wall_s": 29.36
   },
   "run": "full",
-  "spent_after_usd": 5.650944,
-  "spent_before_usd": 5.618923,
-  "spent_this_command_usd": 0.032021,
+  "spent_after_usd": 5.837713,
+  "spent_before_usd": 5.745875,
+  "spent_this_command_usd": 0.091838,
   "stage": "memo",
   "stage_seconds": {
-    "memo": 12.579
+    "memo": 33.767
   },
-  "started_at": 1792359335.565713,
-  "wall_clock_s": 12.585
+  "started_at": 1792363480.860012,
+  "wall_clock_s": 33.78
 }

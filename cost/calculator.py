@@ -267,8 +267,11 @@ def compute(args):
                  f"{'**EXCEEDS BUDGET**' if s['over_budget'] else 'ok'} |")
     L.append("\nFallback $ is declared headroom for a capped stronger-model re-label (max_fallback_fraction); the current pipeline "
              "quarantines instead of escalating, so measured fallback spend is $0.")
-    L.append(f"\nAll 660,622 source rows are accounted for: {rows:,} classified, 13 empty-text quarantines, the rest quarantined as "
-             "`outside_declared_classification_scope`. Fixed overhead (taxonomy, memo, ingest) is added once, not per review.\n")
+    rest = 660622 - 13 - rows
+    tail = (f", and the remaining {rest:,} quarantined as `outside_declared_classification_scope`" if rest > 0
+            else "; no rows remain outside the classification scope")
+    L.append(f"\nAll 660,622 source rows are accounted for: {rows:,} classified, 13 empty-text quarantines{tail}. "
+             "Fixed overhead (taxonomy, memo, ingest) is added once, not per review.\n")
     L.append("## 4. Controls (editable: `cost/assumptions.json`)\n")
     for k, v in C.items():
         L.append(f"- `{k}` = {v}")

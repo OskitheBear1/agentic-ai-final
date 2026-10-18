@@ -234,6 +234,8 @@ async function loadMetrics() {
       <td class="small">Claude Haiku relabels a random ${fmt(m.verifier.sample)}-review sample without seeing the first labels</td></tr>
     ${m.golden ? `<tr><td>Golden set (human)</td><td class="num">${pct(g.topic)}</td><td class="num">${pct(g.intent)}</td><td class="num">${pct(g.severity_exact)}</td>
       <td class="small">${m.golden.n_cases} reviews labeled by hand, compared with the final labels (severity MAE ${m.golden.severity_mae})</td></tr>` : ""}
+    ${m.golden_v2 ? `<tr><td>Golden set, audited (v2)</td><td class="num">${pct(m.golden_v2.agreement.topic)}</td><td class="num">${pct(m.golden_v2.agreement.intent)}</td><td class="num">${pct(m.golden_v2.agreement.severity_exact)}</td>
+      <td class="small">same 50 after the student corrected 15 severities that broke the shared rules (severity MAE ${m.golden_v2.severity_mae})</td></tr>` : ""}
     <tr><td>Flagged for human review</td><td colspan="3" class="num">${fmt(live.needs_review)} reviews</td><td class="small">low model confidence; kept in totals and marked</td></tr></tbody>`;
   $("#footer").insertAdjacentHTML("beforeend", ` Data loaded ${esc(m.loaded_at)}.`);
 }
@@ -276,11 +278,11 @@ async function loadRecommendation() {
   const allOk = m.claims.every((c) => c.matches_ranking);
   $("#rec").innerHTML = `<div class="rec-head"><span class="big">${esc(issueNames[m.recommended_issue_id] || m.recommended_issue_id)}</span>
       <span class="id muted">${esc(m.recommended_issue_id)}</span><span class="pill">written by ${esc(m.model)}</span>
-      <span class="pill ${allOk ? "ok" : "no"}">${allOk ? "all " + m.claims.length + " numeric claims match the ranking" : "claim mismatch"}</span></div>
+      <span class="pill ${allOk ? "ok" : "no"}">${allOk ? "all " + m.claims.length + " numeric claims match the database" : "claim mismatch"}</span></div>
     <div class="memo">${renderMemo(m.markdown)}</div>
     <h3 style="margin-top:18px">Claims, checked against the database</h3>
-    <div class="table-wrap"><table><thead><tr><th>Claim</th><th>Issue</th><th>Metric</th><th class="num">Memo value</th><th class="num">Ranking value</th><th>Match</th></tr></thead><tbody>
-    ${m.claims.map((c) => `<tr id="claim-${esc(c.claim_id)}"><td>${esc(c.claim_id)}</td><td class="id">${esc(c.issue_id)}</td><td>${esc(c.metric)}</td>
+    <div class="table-wrap"><table><thead><tr><th>Claim</th><th>Issue</th><th>Metric</th><th class="num">Memo value</th><th class="num">Database value</th><th>Match</th></tr></thead><tbody>
+    ${m.claims.map((c) => `<tr id="claim-${esc(c.claim_id)}"><td>${esc(c.claim_id)}</td><td class="id">${esc(c.issue_id)}</td><td>${esc(c.metric)}${c.period ? " · " + esc(c.period) : ""}</td>
       <td class="num">${esc(c.value)}</td><td class="num">${esc(c.db_value)}</td><td class="${c.matches_ranking ? "ok" : "no"}">${c.matches_ranking ? "yes" : "no"}</td></tr>`).join("")}
     </tbody></table></div>
     <h3 style="margin-top:18px">Reviews the memo cites</h3>${m.cited.map(reviewHtml).join("")}`;

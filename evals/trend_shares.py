@@ -15,10 +15,10 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from pipeline.common import COMPARABLE_PERIODS as PERIODS  # noqa: E402
+
 ISSUES = ["billing.basic_features_behind_premium", "usability.ad_frequency_loudness", "playback.playback_interruptions"]
-PERIODS = [("2022-06..08", ["2022-06", "2022-07", "2022-08"]), ("2022-09..11", ["2022-09", "2022-10", "2022-11"]),
-           ("2022-12..2023-02", ["2022-12", "2023-01", "2023-02"]), ("2023-03..05", ["2023-03", "2023-04", "2023-05"]),
-           ("2023-06..08", ["2023-06", "2023-07", "2023-08"]), ("2023-09..10", ["2023-09", "2023-10"])]
 
 
 def main():

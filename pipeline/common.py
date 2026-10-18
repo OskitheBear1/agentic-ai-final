@@ -17,6 +17,16 @@ VALID_RATINGS = {"1", "2", "3", "4", "5"}
 STATE_DIR = ROOT / "state"
 ARTIFACTS = ROOT / "artifacts"
 
+# Display names that read badly when generated from the frozen taxonomy ("Other other complaints"). Changing the
+# taxonomy file itself would change its fingerprint and force a full regroup, so the fix is applied at display time.
+DISPLAY_NAMES = {"other.general": "General complaints (no specific issue)"}
+
+# Comparable periods of whole calendar months for trend shares. The partial first (2022-05, data starts 05-17) and
+# last (2023-11, data ends 11-15) months are excluded. Used by the memo evidence pack and evals/trend_shares.py.
+COMPARABLE_PERIODS = [("2022-06..08", ["2022-06", "2022-07", "2022-08"]), ("2022-09..11", ["2022-09", "2022-10", "2022-11"]),
+                      ("2022-12..2023-02", ["2022-12", "2023-01", "2023-02"]), ("2023-03..05", ["2023-03", "2023-04", "2023-05"]),
+                      ("2023-06..08", ["2023-06", "2023-07", "2023-08"]), ("2023-09..10", ["2023-09", "2023-10"])]
+
 
 def sample_rank(review_id):
     """Same ordering the course used to draw the golden/dev samples (prepare_dataset.py)."""

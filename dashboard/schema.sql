@@ -1,7 +1,7 @@
 -- Supabase Postgres schema for the dashboard. Loaded by `python -m pipeline.export_db --run full`.
 -- Everything here is derived from saved pipeline outputs; the dashboard never calls a model.
 
-drop table if exists claims, memo, reviews, issues, run_meta cascade;
+drop table if exists extra_claims, claims, memo, reviews, issues, run_meta cascade;
 
 -- Key/value run facts: coverage counts, totals, cost, verifier and golden-set agreement.
 create table run_meta (
@@ -65,6 +65,19 @@ create table claims (
   value    text not null
 );
 
+-- Memo numbers outside the checker's four metrics (cancellation counts, shares, period shares), with the numerator
+-- and denominator they were computed from (artifacts/<run>/memo/extra_claims.csv, validated by code against the pack).
+create table extra_claims (
+  claim_id    text primary key,
+  issue_id    text not null references issues(issue_id),
+  metric      text not null,
+  period      text not null,
+  value       text not null,
+  numerator   text not null,
+  denominator text not null,
+  source      text not null
+);
+
 -- Row level security on, with no policies: Supabase's public REST API (anon key) can read nothing.
 -- Only our backend, connecting server-side with the database URL, reads these tables.
 alter table run_meta enable row level security;
@@ -72,3 +85,4 @@ alter table issues   enable row level security;
 alter table reviews  enable row level security;
 alter table memo     enable row level security;
 alter table claims   enable row level security;
+alter table extra_claims enable row level security;

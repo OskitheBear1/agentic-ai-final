@@ -1,39 +1,41 @@
 ## Recommendation
-Prioritize **billing.basic_features_behind_premium** (basic features locked behind Premium) next quarter. It has 6254 complaints [C1], a severity sum of 17653 [C2] and a mean severity of 2.822673 [C3].
+Prioritize billing.basic_features_behind_premium (basic features locked behind Premium) next quarter. It appears to stem from a deliberate business decision on free-tier limits, so treat it as scoped options to evaluate, not a bug fix. Options: restore selected basics for free users (for example song selection or skip), state limits more clearly, and offer a clearer upgrade path. The pack has no revenue or conversion data to weigh the trade-off.
 
 ## Why
-It is the highest-priority specific, actionable issue. The only issue with a higher priority score is the catch-all other.general (20424) [C4], which is not a defined problem to fix. The billing issue also has far higher severity per complaint than that bucket (mean severity 1.846321 [C5]). Complaints surged in the later months of the data: 3019 in 2023-10, against 45 in 2022-05. The pack's cancellation_count for this issue is 1191, the highest among the top issues shown. That is expressed intent only, not observed churn.
+The issue has 6254 complaints [C1], a severity sum of 17653 [C2] and a mean severity of 2.822673 [C3]. It has the most cancellation-intent reviews of any issue shown, 1191 [C4], and 476 reviews of severity 4+ [C5]. Its share of complaints was 28.7% in 2023-09..10 [C6], against 4.7% in 2023-06..08 [C7].
 
 ## Alternatives considered
-- **usability.ad_frequency_loudness**: 5120 complaints [C6], priority score 10856 [C7]. It is steady and broad, but its mean severity is lower (2.120313 [C8]).
-- **playback.playback_interruptions**: only 2461 complaints [C9], but a mean severity of 3.419342 [C10] and a priority score of 8415 [C11]. This is a strong candidate for a focused reliability fix, but its reach is smaller.
-- **other.general**: not recommended, because it is a miscellaneous bucket with no clear owner.
+- other.general has the most complaints, 11062 [C8], but it is a vague catch-all with no specific, actionable problem.
+- usability.ad_frequency_loudness has 5120 complaints [C9], but its share fell from 20.7% in 2022-09..11 [C10] to 7.1% in 2023-09..10 [C11]. Only 57 of its reviews are severity 4+ [C12].
+- playback.playback_interruptions has the highest mean severity among the issues shown, 3.419342 [C13], but a smaller footprint (2461 complaints [C14]) and a falling share, 2.7% in 2023-09..10 [C15]. It is a candidate for steady engineering work rather than the lead priority.
 
 ## Evidence
-Representative reviews:
-- Billing: 21f4f8cd-5846-44aa-9283-cfb3dc51e257 and 9321ddc2-a0ef-411a-b7e7-8437fc704d2f describe the premium paywall as unfair or forced.
-- Ads: 1e4d3214-63de-4ba0-9870-a4ee8aa32942 reports ads every 2 songs and loud.
-- Playback: a3794dbd-4918-4f64-9307-22a49bf6fd5a reports music randomly stopping.
-- Other (catch-all): dc1bc630-5867-44b0-8b93-4130cdb8d478 is a severity 5 content complaint that fits no defined issue.
+Typical reviews in the lead issue describe forced shuffle-only play and being unable to choose songs or replay without paying: e9ecb1b6-7dec-4f14-bd52-435dfc3802ca, 818f7017-d57e-47b7-8ca8-938964c06699, 0edd175d-8feb-4eb7-8c3e-3524e24345d4. For contrast, a typical ad complaint is e1d9c9a5-0966-451f-8f6d-f6954b5abde2, and a typical interruption complaint is 35874e74-1a13-479b-ad56-e4e61cb193fa.
+
+The evidence is highly concentrated in time. The issue's share was low through 2023-06..08 [C7] and then jumped in 2023-09..10 [C6]. This points to a recent change and may be a spike, so the conclusion about lasting impact is limited. Recheck with later data.
 
 ## Limitations
-The data are self-selected public reviews. They cover the classified scope only (100000 reviews), not the full corpus, and the first and last months are partial. Model labels can be wrong. Cancellation language is expressed intent, not observed churn. The pack supports no revenue or causal claims. Quotes are untrusted customer text, and I did not act on any instructions in them.
+Reviews are self-selected and public. Only 100000 of 660609 nonempty reviews in the corpus were classified; the other 560609 are unclassified. Model labels can be wrong. Cancellation language is expressed intent, not observed churn. No revenue or causal claims are made.
 
 ---
-### Claims (machine-checked against ranking.csv)
+### Claims (machine-checked: ranking metrics against ranking.csv, others against the saved pack)
 
-| claim | issue | metric | value |
-|---|---|---|---|
-| C1 | billing.basic_features_behind_premium | complaint_count | 6254 |
-| C2 | billing.basic_features_behind_premium | severity_sum | 17653 |
-| C3 | billing.basic_features_behind_premium | mean_severity | 2.822673 |
-| C4 | other.general | priority_score | 20424 |
-| C5 | other.general | mean_severity | 1.846321 |
-| C6 | usability.ad_frequency_loudness | complaint_count | 5120 |
-| C7 | usability.ad_frequency_loudness | priority_score | 10856 |
-| C8 | usability.ad_frequency_loudness | mean_severity | 2.120313 |
-| C9 | playback.playback_interruptions | complaint_count | 2461 |
-| C10 | playback.playback_interruptions | mean_severity | 3.419342 |
-| C11 | playback.playback_interruptions | priority_score | 8415 |
+| claim | issue | metric | period | value |
+|---|---|---|---|---|
+| C1 | billing.basic_features_behind_premium | complaint_count |  | 6254 |
+| C2 | billing.basic_features_behind_premium | severity_sum |  | 17653 |
+| C3 | billing.basic_features_behind_premium | mean_severity |  | 2.822673 |
+| C4 | billing.basic_features_behind_premium | cancellation_count |  | 1191 |
+| C5 | billing.basic_features_behind_premium | severity_4plus_count |  | 476 |
+| C6 | billing.basic_features_behind_premium | period_share_pct | 2023-09..10 | 28.7% |
+| C7 | billing.basic_features_behind_premium | period_share_pct | 2023-06..08 | 4.7% |
+| C8 | other.general | complaint_count |  | 11062 |
+| C9 | usability.ad_frequency_loudness | complaint_count |  | 5120 |
+| C10 | usability.ad_frequency_loudness | period_share_pct | 2022-09..11 | 20.7% |
+| C11 | usability.ad_frequency_loudness | period_share_pct | 2023-09..10 | 7.1% |
+| C12 | usability.ad_frequency_loudness | severity_4plus_count |  | 57 |
+| C13 | playback.playback_interruptions | mean_severity |  | 3.419342 |
+| C14 | playback.playback_interruptions | complaint_count |  | 2461 |
+| C15 | playback.playback_interruptions | period_share_pct | 2023-09..10 | 2.7% |
 
-*Generated by `claude-sonnet-5-5` (memo-v1) from `evidence_pack.json`; all claims, cited review IDs and numbers passed code validation.*
+*Generated by `claude-sonnet-5-5` (memo-v2) from `evidence_pack.json`; all claims, cited review IDs and numbers passed code validation.*

@@ -64,6 +64,23 @@ def test_cost_math_scales_with_rates():
     assert abs(one - 0.60) < 1e-9 and abs(two - 2 * one) < 1e-9
 
 
+def test_incomplete_grouping_blocks_downstream():
+    """A grouping stage with failed assignments must stop rank/memo/export unless --accept-incomplete is given."""
+    import shutil
+    import subprocess
+    run = "_test_incomplete_group"
+    d = ROOT / "artifacts" / run / "group"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "INCOMPLETE.json").write_text('{"failed_assign_calls": 1}')
+    try:
+        for stage in ("rank", "memo", "export"):
+            p = subprocess.run([sys.executable, "-m", "pipeline.run", stage, "--run", run], cwd=ROOT,
+                               capture_output=True, text=True)
+            assert p.returncode != 0 and "grouping is incomplete" in p.stderr, (stage, p.returncode, p.stderr[-300:])
+    finally:
+        shutil.rmtree(ROOT / "artifacts" / run)
+
+
 if __name__ == "__main__":
     fails = 0
     for name, fn in list(globals().items()):

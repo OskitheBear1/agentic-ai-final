@@ -51,7 +51,14 @@ def main():
     p.add_argument("--gzip", action="store_true", help="gzip records.jsonl in the export")
     p.add_argument("--fresh", action="store_true", help="ingest: delete saved state first (cold run, empty result cache)")
     p.add_argument("--paid", action="store_true", help="required for any stage that makes paid model calls")
+    p.add_argument("--accept-incomplete", action="store_true",
+                   help="let rank/memo/export run although grouping is marked incomplete (failed assignments)")
     a = p.parse_args()
+
+    incomplete = ARTIFACTS / a.run / "group" / "INCOMPLETE.json"
+    if a.stage in ("rank", "memo", "export") and incomplete.exists() and not a.accept_incomplete:
+        sys.exit(f"[run] refusing '{a.stage}': grouping is incomplete ({incomplete}). Rerun 'group' (it retries only the "
+                 "failed texts) or pass --accept-incomplete to proceed on fallback membership.")
 
     if a.stage in PAID and not a.paid:
         sys.exit(f"'{a.stage}' makes paid model calls. Re-run with --paid to confirm (budget cap ${a.budget:.2f}).")
@@ -86,7 +93,11 @@ def main():
             timed("verify", lambda: run_verify(a.run, ledger, a.verify_n))
         elif s == "group":
             from .group import run_group
-            timed("group", lambda: run_group(a.run, ledger, a.taxonomy, workers=a.workers))
+            g = timed("group", lambda: run_group(a.run, ledger, a.taxonomy, workers=a.workers))
+            if a.stage == "all" and g.get("failed_assign_calls") and not a.accept_incomplete:
+                print(f"[run] grouping incomplete ({g['failed_assign_calls']} failed assignments); rank/memo/export not run. "
+                      "Rerun 'group' to retry only the failed texts.")
+                break
         elif s == "rank":
             timed("rank", lambda: stage_rank(a.run))
         elif s == "memo":

@@ -205,7 +205,14 @@ def run_group(run, ledger, taxonomy_path=None, workers=4):
     summary = {"complaints": len(rows), "issues": len(issues), "assign_calls": len(alogs),
                "failed_assign_calls": sum(l["outcome"] == "failed" for l in alogs), "wall_s": round(time.monotonic() - t0, 2)}
     end_invocation(con, inv, "finished", summary)
-    if not summary["failed_assign_calls"]:
+    marker = d / "INCOMPLETE.json"
+    if summary["failed_assign_calls"]:
+        # Failed texts sit in <topic>.general fallbacks. Mark the stage incomplete so rank/memo/export refuse to run
+        # until a rerun (which reuses succeeded choices) clears it, or the operator passes --accept-incomplete.
+        (d / "fingerprint.json").unlink(missing_ok=True)
+        write_json(marker, {"reason": "failed subtopic assignments fell back to <topic>.general", **summary})
+    else:
+        marker.unlink(missing_ok=True)
         save_fingerprint(d, fp, summary)
     con.close()
     print("[group]", summary)

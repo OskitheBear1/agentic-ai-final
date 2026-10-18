@@ -1,0 +1,9 @@
+claim_id,issue_id,metric,period,value,numerator,denominator,source
+C4,billing.basic_features_behind_premium,cancellation_count,,1191,,,artifacts/full/rank/aggregates.csv
+C5,billing.basic_features_behind_premium,severity_4plus_count,,476,,,artifacts/full/rank/aggregates.csv
+C6,billing.basic_features_behind_premium,period_share_pct,2023-09..10,28.7%,3809,13272,artifacts/full/memo/evidence_pack.json (period_shares)
+C7,billing.basic_features_behind_premium,period_share_pct,2023-06..08,4.7%,527,11098,artifacts/full/memo/evidence_pack.json (period_shares)
+C10,usability.ad_frequency_loudness,period_share_pct,2022-09..11,20.7%,739,3568,artifacts/full/memo/evidence_pack.json (period_shares)
+C11,usability.ad_frequency_loudness,period_share_pct,2023-09..10,7.1%,937,13272,artifacts/full/memo/evidence_pack.json (period_shares)
+C12,usability.ad_frequency_loudness,severity_4plus_count,,57,,,artifacts/full/rank/aggregates.csv
+C15,playback.playback_interruptions,period_share_pct,2023-09..10,2.7%,361,13272,artifacts/full/memo/evidence_pack.json (period_shares)

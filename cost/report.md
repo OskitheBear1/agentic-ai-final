@@ -54,13 +54,13 @@ Per-unit inputs (refreshed from dev run 'dev10k' (8448 enrich calls)): Jev 1174 
 
 Fallback $ is declared headroom for a capped stronger-model re-label (max_fallback_fraction); the current pipeline quarantines instead of escalating, so measured fallback spend is $0.
 
-All 660,622 source rows are accounted for: 100,000 classified, 13 empty-text quarantines, the rest quarantined as `outside_declared_classification_scope`. Fixed overhead (taxonomy, memo, ingest) is added once, not per review.
+All 660,622 source rows are accounted for: 100,000 classified, 13 empty-text quarantines, and the remaining 560,609 quarantined as `outside_declared_classification_scope`. Fixed overhead (taxonomy, memo, ingest) is added once, not per review.
 
 ## 4. Controls (editable: `cost/assumptions.json`)
 
 - `budget_usd` = 12.0
 - `max_workers` = 4
-- `rps_cap` = 20
+- `rps_cap` = 40
 - `output_token_cap_verify_per_review` = 60
 - `output_token_cap_memo` = 4000
 - `max_fallback_fraction` = 0.02

@@ -1,10 +1,10 @@
 {
-  "fingerprint": "797cd29326b154610d3a8dc89168d8bb089a70e7856bcf5b52a26667af9ecf59",
+  "fingerprint": "c09cec4d99342af332925cf381d17d9aa58b21d08a0a57fa7c89b4bbf6bbcee6",
   "summary": {
-    "attempts": 1,
+    "attempts": 2,
     "cited_reviews": 5,
-    "claims": 11,
+    "claims": 15,
     "recommended_issue_id": "billing.basic_features_behind_premium",
-    "wall_s": 11.93
+    "wall_s": 29.36
   }
 }

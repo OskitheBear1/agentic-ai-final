@@ -14,7 +14,7 @@ import ssl
 import time
 from urllib.parse import unquote, urlparse
 
-from .common import ARTIFACTS, ROOT, load_env
+from .common import ARTIFACTS, COMPARABLE_PERIODS, DISPLAY_NAMES, ROOT, load_env
 from .state import connect
 
 ROWS_PER_INSERT = 1000
@@ -59,7 +59,8 @@ def gather(run):
     a = ARTIFACTS / run
     grading = ROOT / "grading" if run == "full" else a / "grading"
     pack = read_json(a / "memo" / "evidence_pack.json")
-    by_month = {i["issue_id"]: i.get("complaints_by_month", {}) for i in pack["top_issues"]}
+    pack_periods = {i["issue_id"]: {p["period"]: int(p["period_complaints"]) for p in i.get("period_shares", [])}
+                    for i in pack["top_issues"]}
     meta_issues = {i["issue_id"]: i for i in read_json(a / "group" / "issues.json")}
     membership = {r["review_id"]: r["issue_id"] for r in csv.DictReader(open(a / "group" / "membership.csv"))}
 
@@ -90,9 +91,9 @@ def gather(run):
     for row in csv.DictReader(open(a / "rank" / "aggregates.csv")):
         iid = row["issue_id"]
         months = dict(sorted(month_counts.get(iid, {}).items()))
-        if iid in by_month:
-            assert {k: v for k, v in by_month[iid].items() if v} == {k: v for k, v in months.items() if v}, iid
-        issues.append((iid, int(row["rank"]), iid.split(".")[0], meta_issues[iid]["name"],
+        if iid in pack_periods:  # the stored monthly counts must reproduce the memo's period counts
+            assert all(sum(months.get(m, 0) for m in ms) == pack_periods[iid][name] for name, ms in COMPARABLE_PERIODS), iid
+        issues.append((iid, int(row["rank"]), iid.split(".")[0], DISPLAY_NAMES.get(iid, meta_issues[iid]["name"]),
                        meta_issues[iid]["description"], int(row["complaint_count"]), int(row["severity_sum"]),
                        float(row["mean_severity"]), int(row["priority_score"]), float(row["share_of_complaints"]),
                        int(row["cancellation_count"]), int(row["severity_4plus_count"]), int(row["needs_review_count"]),
@@ -101,6 +102,8 @@ def gather(run):
     memo = read_json(a / "memo" / "memo.json")
     memo_summary = read_json(a / "run_summary_memo.json")
     claims = [(c["claim_id"], c["issue_id"], c["metric"], c["value"]) for c in csv.DictReader(open(a / "memo" / "claims.csv"))]
+    extra = [(c["claim_id"], c["issue_id"], c["metric"], c["period"], c["value"], c["numerator"], c["denominator"], c["source"])
+             for c in csv.DictReader(open(a / "memo" / "extra_claims.csv"))] if (a / "memo" / "extra_claims.csv").exists() else []
 
     costs, calls = {}, {}
     for line in open(grading / "calls.jsonl"):
@@ -111,6 +114,8 @@ def gather(run):
     verify = read_json(a / "run_summary_verify.json")["verify"]
     golden_path = ROOT / "evals" / "results" / "golden_eval_final" / "golden_eval.json"
     golden = read_json(golden_path) if golden_path.exists() else None
+    golden_v2_path = ROOT / "evals" / "results" / "golden_eval_final_v2" / "golden_eval.json"
+    golden_v2 = read_json(golden_v2_path) if golden_v2_path.exists() else None
     meta = {
         "run": read_json(grading / "run.json"),
         "coverage": {"records_total": sum(status.values()), "records_by_status": status,
@@ -124,10 +129,13 @@ def gather(run):
         "verifier": {"sample": verify.get("declared_sample_size"), "agreement": verify["agreement"]},
         "golden": golden and {"n_cases": golden["n_cases"], "agreement": golden["agreement"],
                               "severity_mae": golden["severity_mae"]},
+        "comparable_periods": COMPARABLE_PERIODS,
+        "golden_v2": golden_v2 and {"n_cases": golden_v2["n_cases"], "agreement": golden_v2["agreement"],
+                                    "severity_mae": golden_v2["severity_mae"]},
         "memo_model": memo_summary.get("memo", {}).get("model") or "claude-sonnet-5-5",
         "loaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
-    return meta, issues, reviews, memo, claims
+    return meta, issues, reviews, memo, claims, extra
 
 
 def main():
@@ -139,8 +147,8 @@ def main():
     if not url:
         raise SystemExit("SUPABASE_DB_URL is not set in .env")
     t0 = time.monotonic()
-    meta, issues, reviews, memo, claims = gather(args.run)
-    print(f"[export_db] gathered {len(issues)} issues, {len(reviews)} reviews, {len(claims)} claims")
+    meta, issues, reviews, memo, claims, extra = gather(args.run)
+    print(f"[export_db] gathered {len(issues)} issues, {len(reviews)} reviews, {len(claims)} + {len(extra)} claims")
     db = pg_connect(url)
     db.run("BEGIN")
     for stmt in open(ROOT / "dashboard" / "schema.sql").read().split(";\n"):
@@ -158,8 +166,11 @@ def main():
                 [(1, memo["recommended_issue_id"], memo["memo_markdown"], json.dumps(memo["cited_reviews"]),
                   meta["memo_model"])])
     bulk_insert(db, "claims", ["claim_id", "issue_id", "metric", "value"], claims)
+    if extra:
+        bulk_insert(db, "extra_claims", ["claim_id", "issue_id", "metric", "period", "value", "numerator", "denominator",
+                                         "source"], extra)
     db.run("COMMIT")
-    counts = {t: db.run(f"SELECT count(*) FROM {t}")[0][0] for t in ("run_meta", "issues", "reviews", "memo", "claims")}
+    counts = {t: db.run(f"SELECT count(*) FROM {t}")[0][0] for t in ("run_meta", "issues", "reviews", "memo", "claims", "extra_claims")}
     db.close()
     print(f"[export_db] loaded {counts} in {time.monotonic() - t0:.1f}s")
 

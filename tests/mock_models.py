@@ -36,11 +36,15 @@ def _fake_create(**p):
         return _Msg(json.dumps({"topics": [{"topic": t, "subtopics": [{"id": "mock_issue", "name": "Mock", "description": "mock"}]} for t in pack]}), p["model"])
     pack = json.loads(user.split("\n", 1)[1])
     top = pack["top_issues"][0]
-    q = top["representative_quotes"][0]
-    md = f"## Recommendation\nFocus on {top['issue_id']} ({top['complaint_count']} complaints [C1]). Example {q['review_id']}."
+    q = (top["typical_examples"] or top["most_severe_example"])[0]
+    ps = top["period_shares"][-1]
+    md = (f"## Recommendation\nFocus on {top['issue_id']} ({top['complaint_count']} complaints [C1]; "
+          f"{ps['period_share_pct']} of complaints in {ps['period']} [C2]). Example {q['review_id']}.")
     return _Msg(json.dumps({"recommended_issue_id": top["issue_id"], "memo_markdown": md,
-                            "claims": [{"claim_id": "C1", "issue_id": top["issue_id"], "metric": "complaint_count", "value": top["complaint_count"]}],
+                            "claims": [{"claim_id": "C1", "issue_id": top["issue_id"], "metric": "complaint_count", "period": "", "value": top["complaint_count"]},
+                                       {"claim_id": "C2", "issue_id": top["issue_id"], "metric": "period_share_pct", "period": ps["period"], "value": ps["period_share_pct"]}],
                             "cited_reviews": [{"review_id": q["review_id"], "issue_id": top["issue_id"]}]}), p["model"])
+
 
 def install():
     import typesafe_sdk

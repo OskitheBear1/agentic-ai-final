@@ -1,5 +1,5 @@
 {
-  "base_url": "https://agentic-ai-final-three.vercel.app",
+  "base_url": "http://localhost:8765",
   "passed": true,
   "checks": [
     {
@@ -38,9 +38,9 @@
       "detail": ""
     },
     {
-      "check": "every memo claim served and matches the ranking",
+      "check": "every memo claim (claims.csv + extra_claims.csv) served and matches the database",
       "ok": true,
-      "detail": "11 claims"
+      "detail": "15 claims"
     },
     {
       "check": "every cited review is served",

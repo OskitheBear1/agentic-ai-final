@@ -2,11 +2,7 @@ claim_id,issue_id,metric,value
 C1,billing.basic_features_behind_premium,complaint_count,6254
 C2,billing.basic_features_behind_premium,severity_sum,17653
 C3,billing.basic_features_behind_premium,mean_severity,2.822673
-C4,other.general,priority_score,20424
-C5,other.general,mean_severity,1.846321
-C6,usability.ad_frequency_loudness,complaint_count,5120
-C7,usability.ad_frequency_loudness,priority_score,10856
-C8,usability.ad_frequency_loudness,mean_severity,2.120313
-C9,playback.playback_interruptions,complaint_count,2461
-C10,playback.playback_interruptions,mean_severity,3.419342
-C11,playback.playback_interruptions,priority_score,8415
+C8,other.general,complaint_count,11062
+C9,usability.ad_frequency_loudness,complaint_count,5120
+C13,playback.playback_interruptions,mean_severity,3.419342
+C14,playback.playback_interruptions,complaint_count,2461

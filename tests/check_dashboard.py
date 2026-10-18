@@ -58,7 +58,10 @@ def main(base):
     check("memo text and recommendation equal memo.json",
           rec["markdown"] == memo["memo_markdown"] and rec["recommended_issue_id"] == memo["recommended_issue_id"])
     claims = {c["claim_id"]: c["value"] for c in csv.DictReader(open(A / "memo" / "claims.csv"))}
-    check("every memo claim served and matches the ranking",
+    extra = A / "memo" / "extra_claims.csv"
+    if extra.exists():
+        claims |= {c["claim_id"]: c["value"] for c in csv.DictReader(open(extra))}
+    check("every memo claim (claims.csv + extra_claims.csv) served and matches the database",
           {c["claim_id"]: c["value"] for c in rec["claims"]} == claims and all(c["matches_ranking"] for c in rec["claims"]),
           f"{len(claims)} claims")
     check("every cited review is served", {r["review_id"] for r in rec["cited"]} ==

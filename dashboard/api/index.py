@@ -109,6 +109,10 @@ def recommendations():
                            "WHEN 'severity_sum' THEN i.severity_sum::text WHEN 'mean_severity' THEN i.mean_severity::text "
                            "WHEN 'priority_score' THEN i.priority_score::text END AS db_value "
                            "FROM claims c JOIN issues i USING (issue_id) ORDER BY length(c.claim_id), c.claim_id")
+        extra = rows(con, "SELECT claim_id, issue_id, metric, period, value, numerator, denominator, source FROM extra_claims")
+        months = {r["issue_id"]: r for r in rows(con, "SELECT issue_id, complaint_count, cancellation_count, "
+                                                       "severity_4plus_count, complaints_by_month FROM issues")}
+        periods = dict(rows(con, "SELECT value FROM run_meta WHERE key = 'comparable_periods'")[0]["value"])
         ids = [c["review_id"] for c in memo["cited_reviews"]]
         cited = rows(con, f"SELECT {REVIEW_COLS} FROM reviews WHERE review_id = ANY(CAST(:ids AS text[]))",
                      ids="{" + ",".join(ids) + "}")
@@ -117,6 +121,22 @@ def recommendations():
             c["matches_ranking"] = float(c["value"]) == float(c["db_value"])
         except (TypeError, ValueError):
             c["matches_ranking"] = False
+    total_complaints = sum(i["complaint_count"] for i in months.values())
+    for c in extra:  # recompute each extra claim from the stored issue rows, not from the claim file
+        i = months[c["issue_id"]]
+        if c["metric"] in ("cancellation_count", "severity_4plus_count"):
+            c["db_value"] = str(i[c["metric"]])
+        elif c["metric"] == "share_of_complaints_pct":
+            c["db_value"] = f"{100 * i['complaint_count'] / total_complaints:.1f}%"
+        elif c["period"] in periods:
+            mine = sum(i["complaints_by_month"].get(m, 0) for m in periods[c["period"]])
+            every = sum(x["complaints_by_month"].get(m, 0) for x in months.values() for m in periods[c["period"]])
+            c["db_value"] = str(mine) if c["metric"] == "period_complaints" else f"{100 * mine / every:.1f}%"
+        else:
+            c["db_value"] = None
+        c["matches_ranking"] = c["db_value"] == c["value"]
+    claims += extra
+    claims.sort(key=lambda c: int(c["claim_id"].lstrip("C")))
     memo["claims"] = claims
     memo["cited"] = cited
     return cached(memo)
