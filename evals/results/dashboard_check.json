@@ -1,5 +1,5 @@
 {
-  "base_url": "http://localhost:8765",
+  "base_url": "https://agentic-ai-final-three.vercel.app",
   "passed": true,
   "checks": [
     {
